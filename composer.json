@@ -1,0 +1,16 @@
+{
+    "name": "hyunmui/practice-crawler",
+    "authors": [{
+        "name": "Hyeonmin Seon",
+        "email": "hyunmui@outlook.kr"
+    }],
+    "require": {
+        "symfony/dom-crawler": "^5.2",
+        "symfony/string": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MesseEsang\\Crawler\\": "\\"
+        }
+    }
+}
