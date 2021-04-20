@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,composer
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,composer
+# Created by https://www.toptal.com/developers/gitignore/api/composer,visualstudiocode,phpunit
+# Edit at https://www.toptal.com/developers/gitignore?templates=composer,visualstudiocode,phpunit
 
 ### Composer ###
 composer.phar
@@ -9,6 +9,21 @@ composer.phar
 # Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
 # composer.lock
+
+### PHPUnit ###
+# Covers PHPUnit
+# Reference: https://phpunit.de/
+
+# Generated files
+.phpunit.result.cache
+.phpunit.cache
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
 
 ### VisualStudioCode ###
 .vscode/*
@@ -21,4 +36,4 @@ composer.phar
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,composer
+# End of https://www.toptal.com/developers/gitignore/api/composer,visualstudiocode,phpunit

@@ -1,0 +1,4973 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+<meta name="title" content="화학기업| 국내 화학산업 중소기업 정보 검색 켐녹">
+<meta name="description" content="켐녹에서 국내 화학산업 중소기업 정보 검색부터 온라인 영업까지">
+<meta name="keywords" content="켐녹, 화학산업, 기업홍보, 제품홍보, 재고품, 중고품">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.chemknock.co.kr/view.do?no=13">
+<meta property="og:title" content="화학기업| 국내 화학산업 중소기업 정보 검색 켐녹">
+<meta property="og:description" content="켐녹에서 국내 화학산업 중소기업 정보 검색부터 온라인 영업까지">
+<meta property="og:image" content="http://www.chemknock.co.kr/img/default/OpenGraph_potal.jpg">
+<meta property="og:site_name" content="켐녹 – 기업홍보ㆍ제품판매ㆍ구매문의ㆍ재고품/중고설비판매 多 가능합니다.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content= "화학기업| 국내 화학산업 중소기업 정보 검색 켐녹">
+<meta name="twitter:description" content="켐녹에서 국내 화학산업 중소기업 정보 검색부터 온라인 영업까지">
+<meta name="twitter:image" content="http://www.chemknock.co.kr/img/default/OpenGraph_potal.jpg">
+
+<link rel="stylesheet" media="all" href="/portal/css/import.css?ver=210331" />
+
+<!--  파비콘 -->
+<link rel="shortcut icon" href="/img/default/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/default/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="/img/default/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="/img/default/favicon.ico" />
+
+<!-- Canonical URL 적용 -->
+<!-- <link rel="canonical" href="http://www.chemknock.co.kr/view.do?no=13" /> -->
+    <!-- 브라우저 캐싱 메타코드 삽입  -->
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="10">
+
+<script src="/portal/js/jquery-1.11.3.min.js"></script>
+<script src="/portal/js/masonry.min.js" defer></script>
+<script src="/portal/js/slick.min.js" defer></script>
+<script src="/portal/js/swiper.min.js" defer></script>
+
+<script src="/portal/js/sly.min.js" defer></script>
+<script src="//wcs.naver.net/wcslog.js"></script>
+<script src="/portal/js/seo_min.js?ver=210325"></script>
+
+<script type="text/javascript">
+
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "8ef75694a671b8";
+if(window.wcs) {
+	wcs_do();
+}
+
+setTimeout(function() {
+$(document).ready(function() {
+	var getSeq = 13;
+	// 국내 메인 SEQ 그 외 서비스
+	if(getSeq == 11 || getSeq == 203 || getSeq == 204 || getSeq == 205 || getSeq == 207){
+		
+		var title_ = "화학기업| 국내 화학산업 중소기업 정보 검색 켐녹";
+		var desc_ = "켐녹에서 국내 화학산업 중소기업 정보 검색부터 온라인 영업까지";
+
+		if(title_ == "") title_ = "켐녹 - 화학산업 B2B 플랫폼";
+		if(desc_ == "") desc_ = "켐녹은 국내 화학 제품/기업 정보검색, 거래중개 사이트입니다. 제품 등록하고 국내와 전세계 바이어에게 홍보하세요.";
+
+		title_ = title_.substr(0, 39); // 40자 제한
+		desc_ = desc_.substr(0, 79); // 80자 제한
+
+		$("title").text(title_);
+
+		$("meta[name='title']").attr('content', title_);
+		$("meta[name='description']").attr('content', desc_);
+
+		$("meta[property='og:title']").attr('content', $("meta[name='title']").attr('content'));
+		$("meta[property='og:description']").attr('content', $("meta[name='description']").attr('content'));
+		
+		$("meta[name='twitter:title']").attr('content', $("meta[name='title']").attr('content'));
+		$("meta[name='twitter:description']").attr('content', $("meta[name='description']").attr('content'));
+	}
+
+	var head;
+	var desc;
+	
+	try{
+		var para = document.location.href.split("?");
+		if(typeof para[1] != "undefined"){
+			// 캐노니컬 URL
+			var link = para[1].split("&");
+			$("link[rel='canonical']").attr('href', "https://chemknock.co.kr/view.do"+"?"+link[0]);
+
+			// 목록페이지 / 상세페이지 구분
+			var pgMode = para[1].indexOf("pgMode=view") != -1 ? pgMode="view" : pgMode="list";
+			
+			// Controller에서 받아와서 자동으로 넣게끔 수정 해야함. (유지보수 측면)
+			// - no값 받아야함
+			// - 제목값 받아야함.
+			
+				var Key = 13;
+			
+			
+			if(Key === 12) head = "전체 카테고리>";
+			else if(Key === 53) head = "켐녹마켓>";
+			else if(Key === 86) head = "구매문의>";
+			else if(Key === 47) head = "제품홍보>";
+			else if(Key === 13) head = "화학기업>";
+
+			if(pgMode === "list"){ // 목록페이지
+
+				
+						head += "전체";
+					
+				
+				// desc
+				desc = head;
+				
+
+				// title
+				
+
+			}else if(pgMode === "view"){ // 상세페이지
+				var pgCheck = head;
+
+				
+						head = "전체";
+					
+			
+				if(pgCheck.indexOf("켐녹마켓") != -1) var title = $.trim($('#main_title').text()).replace(/\n/g, "");
+				else if(pgCheck.indexOf("구매문의") != -1) var title = $.trim($('h2.title').text()).replace(/\n/g, "");
+				else if(pgCheck.indexOf("제품홍보") != -1) var title = $.trim($('h2.title').text()).replace(/\n/g, "");
+				else if(pgCheck.indexOf("화학기업") != -1) var title = $.trim($('.title').text()).replace(/\n/g, "");
+
+				head += "|"+title;
+				
+				// desc add
+				desc = head+"|";
+
+				if(pgCheck.indexOf("켐녹마켓") != -1){
+					// 상품명
+					var goods = $($($('.dview_tb tbody').children()[0]).children()[1]).text();
+					desc += goods+",";
+					// 상세설명
+					var goods_desc = $.trim($('#notice_brd_iframe').contents().find('#goods_contents').text()).replace(/\n/g, "");
+					desc += goods_desc.replace(/(\s*)/g, "");;
+				}
+				else if(pgCheck.indexOf("구매문의") != -1){
+					// 상세설명
+					var goods_desc = $.trim($('#notice_brd_iframe').contents().find('#goods_contents').text()).replace(/\n/g, "");
+					desc += goods_desc.replace(/(\s*)/g, "");;
+				}
+				else if(pgCheck.indexOf("제품홍보") != -1){
+					// 제품명
+					var goods = $($($('.dview_tb tbody').children()[0]).children()[1]).text();
+					var goods_desc = $.trim($('#notice_brd_iframe').contents().find('#goods_contents').text()).replace(/\n/g, "");
+
+					desc += goods+",";
+					if(goods_desc == "") desc += goods;
+					
+					// 상세설명
+					desc += goods_desc.replace(/(\s*)/g, "");
+				}
+				else if(pgCheck.indexOf("화학기업") != -1){
+					// 기업한줄소개
+					var pdt_simple = $('simple_intro').text();
+					var pdt_info = $.trim($('.dt_info').text());
+					
+					if(pdt_simple == "") desc += pdt_info;
+					else if(pdt_info == "") desc += pdt_simple;
+					else desc += pdt_simple+","+pdt_info;
+				}
+			}
+			
+			head += "|켐녹";
+			
+			var title_ = head.substr(0, 39); // 40자 제한
+			var desc_ = desc.substr(0, 79); // 80자 제한
+
+			// head를 못잡을경우는 meta태그 적용 안되게끔
+			if(head.indexOf("undefined") === -1){
+				$("title").text(title_);
+				
+				$("meta[name='title']").attr('content', title_);
+				$("meta[name='description']").attr('content', desc_);
+				
+				$("meta[property='og:title']").attr('content', title_);
+				$("meta[property='og:description']").attr('content', desc_);
+				
+				$("meta[name='twitter:title']").attr('content', title_);
+				$("meta[name='twitter:description']").attr('content', desc_);
+			}else{
+				//
+			}
+		}
+	}catch{
+		// 
+	}
+});
+}, 1000);
+</script>
+
+<!--[if lt IE 7]>
+<script src="/cmmJs/ie/IE7.js"></script>
+<![endif]-->
+
+<!--[if lt IE 8]>
+<script src="/cmmJs/ie/IE8.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="/cmmJs/ie/IE9.js"></script>
+<script src="/portal/js/html5.js"></script>
+<script src="/portal/js/respond.min.js"></script>
+<![endif]-->
+
+<title>화학기업| 국내 화학산업 중소기업 정보 검색 켐녹</title></head>
+
+<body id="sub">
+	<!-- skipNavigation:S -->
+	<!-- skipNavigation:E -->
+	<div id="wrap">
+		<!-- header:S -->
+		<div class="layerpop caution" id="popLayer">
+	<div class="layerpop_cont">
+		<p class="img"><span class="imgcon"></span></p>
+		<p class="btxt">로그인이 필요한 서비스입니다.<br><span class="c_lorg">로그인</span>페이지로 이동 하시겠습니까?</p>
+		<div class="tc lp_btns">
+			<a href="#n" class="lp_btn btn_org mr10"><span>확인</span></a>
+			<a href="#n" class="lp_btn btn_gry popclose"><span>취소</span></a>
+		</div>
+	</div>
+</div>
+
+<div class="layerpop caution" id="popLayer_fqna">
+	<div class="layerpop_cont">
+		<p class="img"><span class="imgcon"></span></p>
+		<p class="btxt">켐녹문의를 <span class="c_lorg">등록</span>하시겠습니까?</p>
+		<div class="tc lp_btns">
+			<a href="#n" class="lp_btn btn_org mr10" onclick="javascript:showctPopup(this,id)" id="btn_popLayer_fqnaEnd"><span>확인</span></a>
+			<a href="#n" class="lp_btn btn_gry popclose"><span>취소</span></a>
+		</div>
+	</div>
+</div>
+
+<div class="layerpop complete" id="popLayer_fqnaEnd">
+	<div class="layerpop_cont">
+		<p class="img"><span class="imgcon"></span></p>
+		<p class="btxt">켐녹문의가 등록되었습니다.<br>빠른시일내로 답변 드리겠습니다.</p>
+		<div class="tc lp_btns">
+			<a href="#n" class="lp_btn btn_org mr10 popclose"><span>확인</span></a>
+		</div>
+	</div>
+</div><script type="text/javascript" src="/UxisHome/js/form.js"></script>
+<!-- 내용 없음 -->
+<div class="ct_layerpop" id="ct_popLayer">
+	<div class="ct_layerpop_box">
+		<div class="ct_layerpop_top">
+			<h3>기업정보 불러오기</h3>
+		</div>
+		<div class="ct_layerpop_cont">
+			<div class="nodata pt30 pb30">
+				<span class="nodata_img"></span>
+				<div class="nodata_txt">등록된 기업이 없습니다</div>
+			</div>
+			<div class="tc lp_btns">
+				<a href="#n" class="lp_btn btn_org mr10"><span>불러오기</span></a>
+			</div>
+		</div>
+		<a href="#n" class="popclose"></a>
+	</div>
+</div>
+
+<!-- 기업정보 불러오기 -->
+<div class="ct_layerpop" id="pop_companyInfo">
+	<div class="ct_layerpop_box">
+		<div class="ct_layerpop_top">
+			<h3>기업정보 불러오기</h3>
+		</div>
+		<div class="ct_layerpop_cont">
+			<table class="tbl_st01 tc">
+				<caption>선택, 기업명으로 이루어진
+					표입니다.</caption>
+				<colgroup>
+					<col width="50px">
+					<col width="*">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택</th>
+						<th>기업명</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="radio"></td>
+						<td>대한화학주식회사</td>
+					</tr>
+					<tr>
+						<td><input type="radio"></td>
+						<td>한국화학(주)</td>
+					</tr>
+					<td><input type="radio"></td>
+					<td>케미컬코리아</td>
+					</tr>
+					<tr>
+						<td><input type="radio"></td>
+						<td>유시스화학</td>
+					</tr>
+					<tr>
+						<td><input type="radio"></td>
+						<td>일동설비(주)</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tc lp_btns">
+				<a href="#n" class="lp_btn btn_org mr10" id="btn_pop_manager"
+					onclick="showctPopup(this,id);return false;"
+					onkeypress="this.onclick;"><span>불러오기</span></a>
+			</div>
+		</div>
+		<a href="#n" class="popclose"></a>
+	</div>
+</div>
+
+<!-- 담당자 불러오기 -->
+<div class="ct_layerpop" id="pop_manager">
+	<div class="ct_layerpop_box">
+		<div class="ct_layerpop_top">
+			<h3>담당자 불러오기</h3>
+		</div>
+		<div class="ct_layerpop_cont">
+			<table class="tbl-type03 manager tc">
+				<caption>선택, 번호, 부서, 직위/직급, 이름,
+					휴대폰, 회사 이메일(수정불가)로 이루어진
+					표입니다.</caption>
+				<colgroup>
+					<col width="7%">
+					<col width="7%">
+					<col width="12.5%">
+					<col width="12.5%">
+					<col width="12.5%">
+					<col width="12%">
+					<col width="24%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택</th>
+						<th>번호</th>
+						<th>부서</th>
+						<th>직위/직급</th>
+						<th>이름</th>
+						<th>휴대폰</th>
+						<th>회사 이메일(수정불가)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="chck"><input type="radio"></td>
+						<td>1</td>
+						<td>경영지원</td>
+						<td>부장</td>
+						<td>홍길동</td>
+						<td>000-000-0000</td>
+						<td class="email">bob@naver.com</td>
+					</tr>
+					<tr>
+						<td class="chck"><input type="radio"></td>
+						<td>1</td>
+						<td>경영지원</td>
+						<td>부장</td>
+						<td>홍길동</td>
+						<td>000-000-0000</td>
+						<td class="email">bob@naver.com</td>
+					</tr>
+					<tr>
+						<td class="chck"><input type="radio"></td>
+						<td>1</td>
+						<td>경영지원</td>
+						<td>부장</td>
+						<td>홍길동</td>
+						<td>000-000-0000</td>
+						<td class="email">bob@naver.com</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tc lp_btns">
+				<a href="#n" class="lp_btn btn_org mr10"><span>불러오기</span></a>
+			</div>
+		</div>
+		<a href="#n" class="popclose"></a>
+	</div>
+</div>
+
+<!-- 제품정보 불러오기 -->
+<div class="ct_layerpop" id="pop_iteminfo">
+	<div class="ct_layerpop_box">
+		<div class="ct_layerpop_top">
+			<h3>제품정보 불러오기</h3>
+		</div>
+		<div class="ct_layerpop_cont">
+			<ul class="iteminfo_tab">
+				<li class="over"><a href="#n">제품 목록</a></li>
+				<li><a href="#n">서비스 목록</a></li>
+			</ul>
+			<div class="gap20"></div>
+			<table class="tbl_st01 tc">
+				<caption>선택, 기업명으로 이루어진
+					표입니다.</caption>
+				<colgroup>
+					<col width="50px">
+					<col width="*">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택</th>
+						<th>불러오기한 기업명</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="radio"></td>
+						<td>제품1</td>
+					</tr>
+					<tr>
+						<td><input type="radio"></td>
+						<td>제품2</td>
+					</tr>
+					<td><input type="radio"></td>
+					<td>제품3</td>
+					</tr>
+					<tr>
+						<td><input type="radio"></td>
+						<td>제품4</td>
+					</tr>
+					<tr>
+						<td><input type="radio"></td>
+						<td>제품5</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="gap20"></div>
+			<ul class="paging-wrap">
+				<li><a href="#" class="first">첫페이지로</a></li>
+				<li><a href="#" class="prev">이전 페이지로</a></li>
+				<li><a href="#" class="active">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#" class="next">다음페이지로</a></li>
+				<li><a href="#" class="last">첫페이지로</a></li>
+			</ul>
+			<div class="tc lp_btns">
+				<a href="#n" class="lp_btn btn_org mr10" id="btn_pop_manager"
+					onclick="showctPopup(this,id);return false;"
+					onkeypress="this.onclick;"><span>불러오기</span></a>
+			</div>
+		</div>
+		<a href="#n" class="popclose"></a>
+	</div>
+</div>
+
+<!-- 스팸신고 -->
+<div class="ct_layerpop" id="pop_spam">
+	<div class="ct_layerpop_box">
+		<div class="ct_layerpop_top">
+			<h3>스팸/허위정보 신고</h3>
+		</div>
+		<div class="ct_layerpop_cont">
+			<form name="spamDeclaration_form" id="spamDeclaration_form" method="post">
+			<input type="hidden" name="spamId"  value="" />
+			<input type="hidden" name="typeVal" value="" />
+			<input type="hidden" name="spamIdx" value="" />
+			<input type="hidden" name="siteUrl" value="" />
+			<input type="hidden" name="siteId" value="" />
+			<input type="hidden" name="rtnPage" value="" />
+			
+			<table class="tbl_st02">
+				<caption>날짜, 사유, 내용으로 이루어진
+					표입니다.</caption>
+				<colgroup>
+					<col width="80px">
+					<col width="*">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>날짜</th>
+						<td>2021-04-20</td>
+					</tr>
+					<tr>
+						<th>사유</th>
+						<td><select class="w100p sel_01" id="spamCauseListBox" name="cause">
+						</select></td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td><textarea class="w100p" style="height: 150px;" name="cnts"></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+			</form>
+			<p class="info_tx mt10">신고된 게시물은 담당자가
+				확인한 후 켐녹 이용약관 및 운영원칙에 따라
+				적절한 조치를 취하고 있습니다.</p>
+			<div class="tc lp_btns">
+				<a href="#n" class="lp_btn btn_org mr10" id="spanSubmitTag"><span>신고하기</span></a>
+			</div>
+		</div>
+		<a href="#n" class="popclose"></a>
+	</div>
+</div>
+<script type="text/javascript">
+	function spamProcessFunction(id, idx, siteId, type, siteUrl, rtnPage){
+		var obj = this;
+		
+		this.spamId = id;
+		this.idx = idx;
+		this.type = type;
+		this.siteUrl = siteUrl;
+		this.siteId = siteId;
+		this.rtnPage = rtnPage;
+		this.popDiv = $("#pop_spam");
+		this.selectBox = $("#spamCauseListBox");
+
+		this.show = function(){
+			if(confirm("로그인이 필요한 서비스입니다. \n로그인 하시겠습니까?")){
+				location.href= "/view.do?no=login&rtnPage=" + this.rtnPage;
+			}
+		};
+	
+	}
+</script>
+
+<!-- 비회원 문의 -->
+		<div class="ct_layerpop" id="pop_qus">
+			<div class="ct_layerpop_box">
+				<div class="ct_layerpop_top">
+					<h3 id="pop_qus_h3">문의하기</h3>
+				</div>
+				<div class="ct_layerpop_cont">
+					<div class="pop_qus_guest_txt">
+						<p class="txt"> 켐녹 회원은 문의한 내용을 <span>“내정보>보낸문의”</span>에서 확인할 수 있습니다.</p>
+						<a class="join_link" href="/view.do?no=join">회원가입<br class="block-480">하기</a>
+					</div>
+					<form name="nqrDeclaration_form" id="nqrDeclaration_form" method="post">
+					<input type="hidden" name="nqrId" value="" />
+					<input type="hidden" name="nqrIdx" value="" />
+					<input type="hidden" name="typeVal" value="" />
+					<input type="hidden" name="txtTitle" value="" />
+					<input type="hidden" name="siteId" value="" />
+					<input type="hidden" name="siteUrl" value="" />
+					<input type="hidden" name="rtnPage" id="rtnPage" value="" />
+					<input type="hidden" name="noMemId" value="guest" />
+					<table class="tbl_st02">
+						<caption>작성자, 이메일, 연락처, 제목,
+							내용으로 이루어진 표입니다.</caption>
+						<colgroup>
+							<col width="100px">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>
+									작성자
+								</th>
+								<td><input type="text" class="w100p" name="memNm" value="" maxlength="25"></td>
+							</tr>
+							<tr>
+								<th>이메일</th>
+								<td><input type="text" class="w100p" name="email" value="" maxlength="50"></td>
+							</tr>
+							<tr>
+								<th>연락처</th>
+								<td><input type="text" class="w100p" name="phoneNum" value="" maxlength="13" onkeyup="rtnMobileHipenNoMsg(this);" onkeypress="rtnMobileHipenNoMsg(this);"></td>
+							</tr>
+							<tr>
+								<th>제목</th>
+								<td><input type="text" class="w100p" name="nqrTitle" maxlength="50"></td>
+							</tr>
+							<tr>
+								<th>내용</th>
+								<td><textarea class="w100p" style="height: 150px;" name="nqrCnts" maxlength="500"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+					</form>
+					<p class="info_tx mt10" id="pop_qus_info_tx01">등록된 문의는 수정이
+						불가하니 신중하게 등록하여 주세요.</p>
+					<div class="pop_qus_guest_chk">
+						<input type="checkbox" id="guest_chk">
+						<label for="guest_chk">
+							<strong>개인정보 수집 이용 동의</strong>
+						</label>
+						<p>
+							입력하신 작성자, 이메일, 연락처는 문의내역 확인 및 관리를 위하여  수집됩니다.
+							<span class="p_color">※ 동의하지 않으신 경우 문의등록이 제한됩니다.</span>
+						</p>
+					</div>
+					<div class="tc lp_btns">
+						<a href="#n" class="lp_btn btn_org mr10" id="nqrSubmitTag"><span>문의등록</span></a>
+					</div>
+				</div>
+				<a href="#n" class="popclose"></a>
+			</div>
+		</div>
+	<script type="text/javascript">
+	function nqrProcessFunction(id, idx, siteId, type, txtTitle, siteUrl, rtnPage){
+		var obj = this;
+
+		this.siteId = siteId;
+		this.id = id;
+		this.idx = idx;
+		this.type = type;
+		this.txtTitle = txtTitle;
+		this.siteUrl = siteUrl;
+		this.rtnPage = rtnPage;
+
+		this.popDiv = $("#pop_qus");
+
+		this.show = function(){
+			
+			if(obj.type == "D"){
+				if(confirm("로그인이 필요한 서비스입니다. \n로그인 하시겠습니까?")){
+					location.href= "/view.do?no=login&rtnPage=" + this.rtnPage;
+				}
+			}else{
+				
+				$(obj.popDiv).show().center();
+				obj.addOnclickEvent();
+				$('.layerpop_bg').fadeIn(400);
+			}
+		};
+		
+		this.addOnclickEvent = function(){
+			$("#nqrSubmitTag").attr('onclick', '').unbind('click');
+			$("#nqrSubmitTag").click(function(){
+				obj.submitData();
+				return false;
+			});
+		};
+		
+		this.submitData = function(){
+			var frm = document.nqrDeclaration_form;
+			frm.typeVal.value = this.type;
+			frm.nqrIdx.value = this.idx;
+			frm.nqrId.value = this.id;
+			frm.siteId.value = this.siteId;
+			frm.txtTitle.value = this.txtTitle;
+			frm.siteUrl.value = this.siteUrl;
+			frm.rtnPage.value = this.rtnPage;
+			
+			if(!Val_Chk(frm.memNm,'작성자')) return false;
+			if(!Val_Chk(frm.email,'이메일')) return false;
+			if(!Check_EmailFlag(frm.email,'이메일')){
+				alert('이메일 형식이 올바르지 않습니다.');
+				frm.email.focus();
+				return false;
+			}
+			if(!Val_Chk(frm.phoneNum,'연락처')) return false;
+			var num = frm.phoneNum.value.replace(/[^0-9]/gi, '');
+			if(!isMobile(num)){
+				alert('휴대폰을 형식에 맞게 입력해주세요.');
+				frm.phoneNum.focus();
+				return false;
+			}
+			if(!Val_Chk(frm.nqrTitle, '제목')) return;
+			if(!Val_Chk(frm.nqrCnts, '내용')) return;
+			var checked = $('#guest_chk').is(':checked');
+			if(!checked){
+				alert('개인정보수집 이용 동의 하여 주십시오.');
+				return false;
+			}
+			
+			frm.action = "/chemportal/nqr/store.do";
+			frm.submit();
+		}
+	
+	}
+</script>
+
+<!-- 응답하기 -->
+<div class="ct_layerpop" id="pop_ans">
+	<div class="ct_layerpop_box">
+		<div class="ct_layerpop_top">
+			<h3>메시지 보내기</h3>
+		</div>
+		<div class="ct_layerpop_cont">
+			<table class="tbl_st02">
+				<caption>작성자, 이메일, 연락처, 제목,
+					내용으로 이루어진 표입니다.</caption>
+				<colgroup>
+					<col width="80px">
+					<col width="*">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>작성자</th>
+						<td><input type="text" class="w100p" value="홍길동"
+							disabled></td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td><input type="text" class="w100p" value="uxis@uxis.co.kr"
+							disabled></td>
+					</tr>
+					<tr>
+						<th>연락처</th>
+						<td><input type="text" class="w100p" value="01001100110"
+							disabled></td>
+					</tr>
+					<tr>
+						<th>제목</th>
+						<td><input type="text" class="w100p"></td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td><textarea class="w100p" style="height: 150px;"></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="info_tx mt10">등록된 문의는 수정이
+				불가하니 신중하게 등록하여 주세요.</p>
+			<p class="info_tx mt10">내 정보 > 보낸문의 > 구매문의 에서 조회하실
+				수 있습니다.</p>
+			<div class="tc lp_btns">
+				<a href="#n" class="lp_btn btn_org mr10"><span>메시지 발송</span></a>
+			</div>
+		</div>
+		<a href="#n" class="popclose"></a>
+	</div>
+</div>
+
+<!-- 홍보영상 -->
+<div class="video_pop">
+	<div class="pop_box">
+		<div class="video_box">
+			<div style="position: relative; height: 0; padding-bottom: 56.25%;"><iframe id="video_frame" style="position: absolute; width: 100%; height: 100%;" src="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" width="560" height="315" frameborder="0"></iframe></div>
+		</div>
+		<a href="#n" onclick="javascript:videoClose(); return false;" class="popclose"></a>
+	</div>
+	<div class="bg"></div>
+</div>
+
+<script type="text/javascript" >
+		function videoClose(){
+			//$('#video_frame').attr('src', '');
+			
+			var original = document.getElementById("video_frame");
+		    var newFrame = document.createElement("iframe");
+		    newFrame.id = 'video_frame';
+		    newFrame.src = '';
+		    var parent = original.parentNode;
+		    parent.replaceChild(newFrame, original);
+			
+			$('.video_pop').fadeOut(300);
+		}
+</script><script type="text/javascript" src="/share/cmmJs/Autocomplete/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="/share/cmmJs/Autocomplete/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="/share/cmmJs/Autocomplete/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="/share/cmmJs/Autocomplete/jquery.autocomplete.js"></script>
+<link rel="stylesheet" media="all" href="/share/cmmJs/Autocomplete/jquery.autocomplete.css" />
+
+<!-- 상단 배너 : s -->
+	<div class="siteTop_banner">
+		<p class="img">
+			<a href="https://chemknock.co.kr/" target="_blank"><img src="/cmm/file/showSumNailImg.do?fidx=FILE00000059923&fseq=0&nit=0020&ssnf=false" alt="켐녹에서 홍보해 드립니다."></a>
+			</p>
+		<button class="close" title="팝업 닫힘"></button>
+	</div>
+	<!-- 상단 배너 : e -->
+<header>
+	<div id="inwrap">
+		<div class="search-box sub-head">
+			<a href="/main.do" class="logo-box"> 
+				<img src="/cmm/file/showCpImgFile.do?siteImgSeq=20443&imgType=0030&nit=0050" alt="logo" class="logo"/>
+					</a>
+<form name="portal_top_search_form" id="portal_top_search_form" method="get" action="" onsubmit="return false;">
+	<input type="hidden" name="no" value="137"/>
+			<div class="search">
+				<div class="search_border">
+					<input type="text" name="sw" id="portalTopSearchSw" value="" placeholder="기업명,  제품명 검색하세요." />
+					<a href="#none" onclick="portalTopSearchFormSubimt(); return false;" class="search-btn">검색</a>
+				</div>
+			</div>
+</form>			
+			<!-- search :: E -->
+			<div class="search-right">
+				<div id="main-banner-slide-box">
+<div class="main-banner-slide sd_option">
+	<a href="/view.do?no=207" class="main-banner" target="_blank"><img src="/cmm/file/showSumNailImg.do?fidx=FILE00000060151&fseq=0&nit=0020&ssnf=false" alt="위탁판매 안내" width="300" height="105"></a>
+			<a href="/view.do?no=120" class="main-banner" target="_blank"><img src="/cmm/file/showSumNailImg.do?fidx=FILE00000060152&fseq=0&nit=0020&ssnf=false" alt="비대면 디지털 마케팅" width="300" height="105"></a>
+			</div>
+					<div class="main-banner-slide-control">
+						<a href="#n" class="prev"></a>
+						<a href="#n" class="next"></a>
+						<div class="cr"></div>
+					</div>
+<script type="text/javascript">
+						var availableTags = new Array();
+
+						function mainBannerSlideProcess(){
+
+							$('.main-banner-slide').slick({								
+								autoplay: true,
+								autoplaySpeed: 15000,
+								dots: false,
+								fade: true,
+								arrows:true,
+								prevArrow: '.main-banner-slide-control > .prev',
+								nextArrow: '.main-banner-slide-control > .next',
+							});
+							slideNoCursor();
+
+						}
+
+						function getAvailableTag(){
+							$.ajax({
+								type: "post",
+								url: "/chemportal/search/getAutoCompleteWord.do", 
+								dataType : 'json',
+								success: function(data) {
+									if(data.keyword != undefined){
+										data.keyword.forEach(function(element, index){
+											availableTags.push(element);
+										});
+										$("#portalTopSearchSw").autocomplete(availableTags,{
+											matchContains: true,
+											selectFirst: false
+										});
+									}
+								}
+							});
+						}
+
+						function portalTopSearchFormSubimt(){
+							var frm = document.portal_top_search_form;
+							if(frm.sw.value == ""){
+								alert("검색어를 입력하여 주세요.");
+							}else{
+								frm.action = "/view.do";
+								frm.submit();
+							}
+						}
+						
+						$(document).ready(function() {
+							getAvailableTag();
+							mainBannerSlideProcess();
+							
+							$("#portal_top_search_form").keydown(function(key){
+								if(key.keyCode == 13){
+									portalTopSearchFormSubimt();
+									return false;
+								}
+								
+								setTimeout(function() { 
+									$('.ac_results').stop().animate({opacity:1},0);
+								},200)
+							});
+						});
+					</script>
+				</div>
+			</div><!-- search-right :: E -->
+		</div><!-- search-box :: E -->
+	</div><!-- inwrap :: E -->
+
+	<script>
+$(document).ready(function() {
+	var nowKey = "13";
+	if(nowKey == "53"){
+		
+		$('body').addClass("sell_color");
+	}else if(nowKey == "86"){
+		
+		$('body').addClass("buy_color");
+	}else if(nowKey == "47"){
+		
+		$('body').addClass("pdt_color");
+		
+		if($('.dview-top').find('.title').text().length == 0){
+			$('.dview-top .status.url').css('top','-55px');
+		}
+	}else if(nowKey == "13"){
+		
+		$('body').addClass("cp_color");
+	}else if(nowKey == "90" || nowKey == "91" || nowKey == "116" || nowKey == "117" || nowKey == "118" || nowKey == "120" || nowKey == "121"|| nowKey == "206"){
+		//남색 컬러	
+		$('body').addClass("search_color");			
+	}else if(nowKey == "87" || nowKey == "147" ||  nowKey == "136" || nowKey == "156"){
+		//타이틀만 남색 컬러에 2뎁스 메뉴 없음
+		$('body').addClass("ttonly_color");
+		$('#sub_menu-box').hide();
+	}else if(nowKey == "88" ||  nowKey == "115" ||  nowKey == "137" || nowKey == "191" || nowKey == "208" || nowKey == "209"){
+		//남색 컬러에 2뎁스 메뉴 없음
+		$('body').addClass("search_color");
+		$('#sub_menu-box').hide();
+		
+		//지역검색
+		$('body').addClass("cp_color");
+		$('#sub_menu-box').hide();
+	}else if(nowKey == "12"){
+		//전체카테고리
+		$('body').addClass("search_color");
+		$('#sub_menu-box').hide();
+		$('header .pc-category-box > a').addClass('on')
+	}else if(nowKey == "124"){
+		//로그인
+		$('body').addClass("login_body");
+		$('#sub_menu-box').hide();
+	}else if(nowKey == "125" || nowKey == "123"){
+		//회원가입, 아이디비번찾기
+		$('#sub_menu-box').hide();
+	}
+	
+	//통합검색
+	//				var pageURL = window.location.href;
+	//				var afterStr = pageURL.split('dvsn=');
+	//				var tabNm = afterStr[1].split('&');
+	var dvsn = "";
+	
+	if(nowKey == "137" || nowKey == "12"){
+		if(dvsn == "sell"){
+			
+			$('body').removeClass();
+			$('body').addClass("sell_color");
+		}if(dvsn == "buy"){
+			
+			$('body').removeClass();
+			$('body').addClass("buy_color");
+		}if(dvsn == "pdt"){
+			
+			$('body').removeClass();
+			$('body').addClass("pdt_color");
+			
+			if($('.dview-top').find('.title').text().length == 0){
+				$('.dview-top .status.url').css('top','-55px');
+			}
+		}if(dvsn == "cp"){
+			
+			$('body').removeClass();
+			$('body').addClass("cp_color");
+		}
+	}
+});
+</script>
+	<div class="navi-box">
+		<div id="inwrap">
+			<div class="pc-category-box">
+				<a href="#n" class="pc-category-btn"><span class="menu_icon"><i>메뉴아이콘</i></span>
+				
+				전체 카테고리
+				</a>			
+			</div>
+			<div class="m-category-box">
+				<a href="#n" onclick="oo_hidden('m-category-pop','block');return false;"> <span>카테고리</span>
+				</a>
+			</div>
+			<div class="navi">
+				<ul class="navi-ul">
+					<li >
+						<a href="/view.do?no=53">
+							<span>켐녹마켓</span></a>
+					</li>
+					<li >
+						<a href="/view.do?no=86">
+							<span>구매문의</span></a>
+					</li>
+					<li >
+						<a href="/view.do?no=47">
+							<span>제품홍보</span></a>
+					</li>
+					<li class="active">
+						<a href="/view.do?no=13">
+							<h1><span>화학기업</span></h1></a>
+					</li>
+					<li >
+						<a href="/view.do?no=203">
+							<span>서비스</span>
+						</a>
+					</li>
+					<li >
+						<a href="/view.do?no=208">
+							<span>지역검색</span>
+						</a>
+					</li>
+				</ul>
+				<script>
+					var a = 0;
+					var active_li = 0;
+					$('.navi-ul>li').each(function(){
+						if($(this).hasClass('active')){
+							active_li = a;
+							return false;
+						}else{
+							active_li = -1;
+						}
+						a++;
+					});				
+					$(function(){										
+						var $mnaviframe = $('.navi');					
+						$mnaviframe.sly({
+							horizontal: 1,
+							itemNav: 'basic',
+							smart: 1,
+							activateOn: 'click',
+							activateMiddle: true,
+							mouseDragging: 1,
+							touchDragging: 1,
+							releaseSwing: 1,
+							startAt: active_li,
+							scrollBy: 1,
+							activatePageOn: 'click',
+							speed: 600,
+							elasticBounds: 1,
+							easing: 'easeOutExpo',
+							dragHandle: 1,
+							dynamicHandle: 1,
+							clickBar: 2,
+							speed:0
+						});			
+					
+						setTimeout(function() {						
+							$mnaviframe.stop().animate({opacity:1},200);
+						},100)		
+					
+						$('.navi').find('li > a').on('click',function(){
+							var lidex = $(this).parent('li').index()+1;						
+							$('.navi').find('li').each(function(){
+								$(this).removeClass('active');
+							});	
+						});
+					},0);
+					function sizeControlnv(width) {
+						width = parseInt(width);
+						var bodyHeight = document.documentElement.clientHeight; 
+						var bodyWidth = document.documentElement.clientWidth; 
+						var chkHeader = $('header').outerHeight();
+	
+						$('.navi').sly('reload');
+					}
+					jQuery(function($){
+						sizeControlnv($(this).width());
+						$(window).resize(function() {
+							if(this.resizeTO) {
+								clearTimeout(this.resizeTO);
+							}
+							this.resizeTO = setTimeout(function() {
+								$(this).trigger('resizeEnd');
+							}, 50);
+						});
+					});	
+					$(window).on('resizeEnd', function() {
+						sizeControlnv($(this).width());
+					});
+					$(window).load( function() {
+						sizeControlnv($(this).width());
+					});
+				</script>
+			</div>
+			<div class="navi-box-right">
+				<div class="login-wrapper">
+					<div class="sub-login">
+						<ul class="listbtns">
+							<li><a href="/view.do?no=login"><span>로그인</span></a></li>
+							<li><a href="/view.do?no=join"><span>회원가입</span></a></li>
+							<li><a href="http://chemknock.com" target="_blank"><span>글로벌</span></a></li>
+						</ul>
+					</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="cr"></div>
+	
+	<!-- common-category : S -->
+	<div class="category-pop">
+	<div class="inner">
+		<div class="category">
+			<div class="category-list-box">
+	<div class="category-list list01">
+					<div class="category-list-tit">
+						<a href="#">석유 화학</a>
+					</div>
+					<!-- 2,3뎁스 추가건 : s-->
+					<div class="category-list-ul">
+						<ul class="category-list-ul-content">
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0101000" class="depth03-title">가스</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101001&pgMode=list&pageIndex=1&pageUnit=10">가스(<i class="num">176</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101002&pgMode=list&pageIndex=1&pageUnit=10">산업용가스(<i class="num">306</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101003&pgMode=list&pageIndex=1&pageUnit=10">일반용가스(<i class="num">25</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101004&pgMode=list&pageIndex=1&pageUnit=10">의료용가스(<i class="num">37</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101005&pgMode=list&pageIndex=1&pageUnit=10">가스용기 및 부품(<i class="num">480</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0102000" class="depth03-title">고무</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0102000&smlCateCd=0102001&pgMode=list&pageIndex=1&pageUnit=10">고무(<i class="num">185</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0102000&smlCateCd=0102002&pgMode=list&pageIndex=1&pageUnit=10">고무 첨가제(<i class="num">285</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0102000&smlCateCd=0102003&pgMode=list&pageIndex=1&pageUnit=10">고무제품(<i class="num">948</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0103000" class="depth03-title">플라스틱</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0103000&smlCateCd=0103001&pgMode=list&pageIndex=1&pageUnit=10">플라스틱(<i class="num">123</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0103000&smlCateCd=0103002&pgMode=list&pageIndex=1&pageUnit=10">플라스틱 수지(<i class="num">581</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0103000&smlCateCd=0103003&pgMode=list&pageIndex=1&pageUnit=10">플라스틱 제품(<i class="num">1391</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0103000&smlCateCd=0103004&pgMode=list&pageIndex=1&pageUnit=10">분쇄품/스크랩(<i class="num">49</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0104000" class="depth03-title">합성수지</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104001&pgMode=list&pageIndex=1&pageUnit=10">합성수지(<i class="num">1722</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104002&pgMode=list&pageIndex=1&pageUnit=10">ABS(<i class="num">120</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104003&pgMode=list&pageIndex=1&pageUnit=10">PE(<i class="num">84</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104004&pgMode=list&pageIndex=1&pageUnit=10">PP(<i class="num">81</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104005&pgMode=list&pageIndex=1&pageUnit=10">EVA(<i class="num">24</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104006&pgMode=list&pageIndex=1&pageUnit=10">PVC(<i class="num">73</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104007&pgMode=list&pageIndex=1&pageUnit=10">아크릴(<i class="num">102</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104008&pgMode=list&pageIndex=1&pageUnit=10">멜라민(<i class="num">7</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104009&pgMode=list&pageIndex=1&pageUnit=10">우레탄(<i class="num">198</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104010&pgMode=list&pageIndex=1&pageUnit=10">에폭시(<i class="num">49</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0105000" class="depth03-title">무기화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105001&pgMode=list&pageIndex=1&pageUnit=10">무기화합물(<i class="num">170</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105002&pgMode=list&pageIndex=1&pageUnit=10">산화물(<i class="num">28</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105003&pgMode=list&pageIndex=1&pageUnit=10">황산염(<i class="num">3</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105004&pgMode=list&pageIndex=1&pageUnit=10">염화물(<i class="num">6</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105005&pgMode=list&pageIndex=1&pageUnit=10">인산염(<i class="num">9</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105006&pgMode=list&pageIndex=1&pageUnit=10">규산염(<i class="num">2</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105007&pgMode=list&pageIndex=1&pageUnit=10">탄산염(<i class="num">0</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105008&pgMode=list&pageIndex=1&pageUnit=10">질산염(<i class="num">3</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0106000" class="depth03-title">유기화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106001&pgMode=list&pageIndex=1&pageUnit=10">유기화합물(<i class="num">35</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106002&pgMode=list&pageIndex=1&pageUnit=10">아민(<i class="num">2</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106003&pgMode=list&pageIndex=1&pageUnit=10">유기산(<i class="num">4</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106004&pgMode=list&pageIndex=1&pageUnit=10">벤조산(<i class="num">0</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106005&pgMode=list&pageIndex=1&pageUnit=10">나트륨(<i class="num">1</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0107000" class="depth03-title">유기용제</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107001&pgMode=list&pageIndex=1&pageUnit=10">유기용제(<i class="num">259</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107002&pgMode=list&pageIndex=1&pageUnit=10">알코올(<i class="num">13</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107003&pgMode=list&pageIndex=1&pageUnit=10">탄화수소계 유기용제(<i class="num">3</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107004&pgMode=list&pageIndex=1&pageUnit=10">에스테르계 유기용제(<i class="num">0</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107005&pgMode=list&pageIndex=1&pageUnit=10">에테르계 유기용제(<i class="num">0</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107006&pgMode=list&pageIndex=1&pageUnit=10">케톤계 유기용제(<i class="num">0</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0108000" class="depth03-title">기타 석유 화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0108000&smlCateCd=0108001&pgMode=list&pageIndex=1&pageUnit=10">기타 석유 화학(<i class="num">725</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0108000&smlCateCd=0108002&pgMode=list&pageIndex=1&pageUnit=10">화학 원료(<i class="num">1206</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0108000&smlCateCd=0108005&pgMode=list&pageIndex=1&pageUnit=10">화공약품(<i class="num">1258</i>)</a></li>
+										</ul>			
+								</li>
+							</ul>
+					</div>
+					<!-- 2,3뎁스 추가건 : e-->
+				</div>
+	<div class="category-list list02">
+					<div class="category-list-tit">
+						<a href="#">정밀 화학</a>
+					</div>
+					<!-- 2,3뎁스 추가건 : s-->
+					<div class="category-list-ul">
+						<ul class="category-list-ul-content">
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0201000" class="depth03-title">화학첨가제</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201001&pgMode=list&pageIndex=1&pageUnit=10">화학첨가제(<i class="num">1269</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201003&pgMode=list&pageIndex=1&pageUnit=10">시약(<i class="num">2292</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201004&pgMode=list&pageIndex=1&pageUnit=10">안료 & 염료(<i class="num">585</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201005&pgMode=list&pageIndex=1&pageUnit=10">중간체(<i class="num">4</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201006&pgMode=list&pageIndex=1&pageUnit=10">경화제(<i class="num">21</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201007&pgMode=list&pageIndex=1&pageUnit=10">난연제(<i class="num">103</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201008&pgMode=list&pageIndex=1&pageUnit=10">계면활성제(<i class="num">435</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201009&pgMode=list&pageIndex=1&pageUnit=10">산화방지제(<i class="num">31</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201010&pgMode=list&pageIndex=1&pageUnit=10">대전방지제(<i class="num">106</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0202000" class="depth03-title">산업용 오일</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202001&pgMode=list&pageIndex=1&pageUnit=10">산업용 오일(<i class="num">438</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202002&pgMode=list&pageIndex=1&pageUnit=10">구리스(<i class="num">414</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202003&pgMode=list&pageIndex=1&pageUnit=10">윤활유(<i class="num">644</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202004&pgMode=list&pageIndex=1&pageUnit=10">절삭유(<i class="num">652</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202005&pgMode=list&pageIndex=1&pageUnit=10">열처리유(<i class="num">59</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202006&pgMode=list&pageIndex=1&pageUnit=10">방청유(<i class="num">152</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202007&pgMode=list&pageIndex=1&pageUnit=10">소성가공유(<i class="num">119</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202008&pgMode=list&pageIndex=1&pageUnit=10">합성오일(<i class="num">11</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0203000" class="depth03-title">표면처리 화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203001&pgMode=list&pageIndex=1&pageUnit=10">표면처리제(<i class="num">646</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203002&pgMode=list&pageIndex=1&pageUnit=10">박리제(<i class="num">107</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203003&pgMode=list&pageIndex=1&pageUnit=10">세척제(<i class="num">623</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203004&pgMode=list&pageIndex=1&pageUnit=10">광택제(<i class="num">87</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203005&pgMode=list&pageIndex=1&pageUnit=10">수처리제(<i class="num">420</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203006&pgMode=list&pageIndex=1&pageUnit=10">도금 약품(<i class="num">199</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0204000" class="depth03-title">에어로졸</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204001&pgMode=list&pageIndex=1&pageUnit=10">에어로졸(<i class="num">50</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204002&pgMode=list&pageIndex=1&pageUnit=10">문구용 에어로졸(<i class="num">1</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204003&pgMode=list&pageIndex=1&pageUnit=10">일반용 에어로졸(<i class="num">3</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204004&pgMode=list&pageIndex=1&pageUnit=10">전기전자용 에어로졸(<i class="num">35</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204005&pgMode=list&pageIndex=1&pageUnit=10">산업용 에어로졸(<i class="num">371</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0205000" class="depth03-title">실리콘</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205001&pgMode=list&pageIndex=1&pageUnit=10">실리콘(<i class="num">294</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205002&pgMode=list&pageIndex=1&pageUnit=10">실리콘 오일(<i class="num">20</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205003&pgMode=list&pageIndex=1&pageUnit=10">실리콘 소포제(<i class="num">41</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205004&pgMode=list&pageIndex=1&pageUnit=10">실리콘 이형제(<i class="num">33</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205005&pgMode=list&pageIndex=1&pageUnit=10">실리콘 컴파운더(<i class="num">8</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205006&pgMode=list&pageIndex=1&pageUnit=10">실리콘 바니쉬(<i class="num">10</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205007&pgMode=list&pageIndex=1&pageUnit=10">RTV 실리콘(<i class="num">41</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0206000" class="depth03-title">기타 정밀 화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0206000&smlCateCd=0206001&pgMode=list&pageIndex=1&pageUnit=10">기타 정밀 화학(<i class="num">911</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0206000&smlCateCd=0206002&pgMode=list&pageIndex=1&pageUnit=10">고분자 합성수지(<i class="num">657</i>)</a></li>
+										</ul>			
+								</li>
+							</ul>
+					</div>
+					<!-- 2,3뎁스 추가건 : e-->
+				</div>
+	<div class="category-list list03">
+					<div class="category-list-tit">
+						<a href="#">접착 & 코팅</a>
+					</div>
+					<!-- 2,3뎁스 추가건 : s-->
+					<div class="category-list-ul">
+						<ul class="category-list-ul-content">
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0301000" class="depth03-title">접착제</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301001&pgMode=list&pageIndex=1&pageUnit=10">접착제(<i class="num">664</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301002&pgMode=list&pageIndex=1&pageUnit=10">에멀전 접착제(<i class="num">107</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301003&pgMode=list&pageIndex=1&pageUnit=10">합성고무 접착제(<i class="num">88</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301004&pgMode=list&pageIndex=1&pageUnit=10">합성수지 접착제(<i class="num">45</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301005&pgMode=list&pageIndex=1&pageUnit=10">에폭시 접착제(<i class="num">168</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301006&pgMode=list&pageIndex=1&pageUnit=10">우레탄 접착제(<i class="num">97</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301007&pgMode=list&pageIndex=1&pageUnit=10">순간 접착제(<i class="num">117</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301008&pgMode=list&pageIndex=1&pageUnit=10">혐기성 접착제(<i class="num">39</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301009&pgMode=list&pageIndex=1&pageUnit=10">UV 접착제(<i class="num">33</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301010&pgMode=list&pageIndex=1&pageUnit=10">핫멜트 접착제(<i class="num">99</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0302000" class="depth03-title">실란트</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302001&pgMode=list&pageIndex=1&pageUnit=10">실란트(<i class="num">105</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302002&pgMode=list&pageIndex=1&pageUnit=10">폴리우레탄 실란트(<i class="num">31</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302003&pgMode=list&pageIndex=1&pageUnit=10">실리콘 실란트(<i class="num">277</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302004&pgMode=list&pageIndex=1&pageUnit=10">아크릴 실란트(<i class="num">45</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302005&pgMode=list&pageIndex=1&pageUnit=10">변성 실란트(<i class="num">25</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0303000" class="depth03-title">점착 테이프</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0303000&smlCateCd=0303001&pgMode=list&pageIndex=1&pageUnit=10">점착 테이프(<i class="num">948</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0303000&smlCateCd=0303002&pgMode=list&pageIndex=1&pageUnit=10">점착제(<i class="num">74</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0303000&smlCateCd=0303003&pgMode=list&pageIndex=1&pageUnit=10">양면 점착 테이프(<i class="num">411</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0303000&smlCateCd=0303004&pgMode=list&pageIndex=1&pageUnit=10">단면 점착 테이프(<i class="num">408</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0304000" class="depth03-title">코팅</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304001&pgMode=list&pageIndex=1&pageUnit=10">코팅(<i class="num">442</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304002&pgMode=list&pageIndex=1&pageUnit=10">코팅원료(<i class="num">102</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304003&pgMode=list&pageIndex=1&pageUnit=10">불소 코팅(<i class="num">62</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304004&pgMode=list&pageIndex=1&pageUnit=10">나노 코팅(<i class="num">31</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304005&pgMode=list&pageIndex=1&pageUnit=10">실리콘 코팅(<i class="num">42</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304006&pgMode=list&pageIndex=1&pageUnit=10">우레탄 코팅(<i class="num">15</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304007&pgMode=list&pageIndex=1&pageUnit=10">에폭시 코팅(<i class="num">7</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304008&pgMode=list&pageIndex=1&pageUnit=10">세라믹 코팅(<i class="num">25</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304009&pgMode=list&pageIndex=1&pageUnit=10">프라이머(<i class="num">67</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0305000" class="depth03-title">페인트&도료</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305001&pgMode=list&pageIndex=1&pageUnit=10">페인트(<i class="num">134</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305002&pgMode=list&pageIndex=1&pageUnit=10">도료(<i class="num">619</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305003&pgMode=list&pageIndex=1&pageUnit=10">페인트 원료(<i class="num">112</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305004&pgMode=list&pageIndex=1&pageUnit=10">산업용 페인트(<i class="num">73</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305005&pgMode=list&pageIndex=1&pageUnit=10">건축용 페인트(<i class="num">96</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305006&pgMode=list&pageIndex=1&pageUnit=10">인테리어용 페인트(<i class="num">10</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305007&pgMode=list&pageIndex=1&pageUnit=10">방수용 페인트(<i class="num">19</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0306000" class="depth03-title">인쇄</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306001&pgMode=list&pageIndex=1&pageUnit=10">인쇄(<i class="num">102</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306002&pgMode=list&pageIndex=1&pageUnit=10">잉크(<i class="num">570</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306003&pgMode=list&pageIndex=1&pageUnit=10">토너(<i class="num">3</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306004&pgMode=list&pageIndex=1&pageUnit=10">인쇄부자재(<i class="num">86</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306005&pgMode=list&pageIndex=1&pageUnit=10">인쇄기계(<i class="num">243</i>)</a></li>
+										</ul>			
+								</li>
+							</ul>
+					</div>
+					<!-- 2,3뎁스 추가건 : e-->
+				</div>
+	<div class="category-list list04">
+					<div class="category-list-tit">
+						<a href="#">산업용 필름</a>
+					</div>
+					<!-- 2,3뎁스 추가건 : s-->
+					<div class="category-list-ul">
+						<ul class="category-list-ul-content">
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0401000" class="depth03-title">필름</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401001&pgMode=list&pageIndex=1&pageUnit=10">필름(<i class="num">160</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401002&pgMode=list&pageIndex=1&pageUnit=10">PET 필름(<i class="num">41</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401003&pgMode=list&pageIndex=1&pageUnit=10">PI 필름(<i class="num">11</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401004&pgMode=list&pageIndex=1&pageUnit=10">OPP 필름(<i class="num">7</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401005&pgMode=list&pageIndex=1&pageUnit=10">PE 필름(<i class="num">47</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401006&pgMode=list&pageIndex=1&pageUnit=10">PC 필름(<i class="num">5</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401007&pgMode=list&pageIndex=1&pageUnit=10">PVC 필름(<i class="num">63</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0402000" class="depth03-title">기능성 필름</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402001&pgMode=list&pageIndex=1&pageUnit=10">기능성 필름(<i class="num">275</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402002&pgMode=list&pageIndex=1&pageUnit=10">광학용 필름(<i class="num">25</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402003&pgMode=list&pageIndex=1&pageUnit=10">생분해성 필름(<i class="num">26</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402004&pgMode=list&pageIndex=1&pageUnit=10">의료용 필름(<i class="num">9</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402005&pgMode=list&pageIndex=1&pageUnit=10">농업용 필름(<i class="num">111</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402006&pgMode=list&pageIndex=1&pageUnit=10">포장용 필름(<i class="num">180</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402007&pgMode=list&pageIndex=1&pageUnit=10">WRAP(랩)(<i class="num">28</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0403000" class="depth03-title">코팅 필름</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403001&pgMode=list&pageIndex=1&pageUnit=10">코팅 필름(<i class="num">93</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403002&pgMode=list&pageIndex=1&pageUnit=10">이형 필름(<i class="num">67</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403003&pgMode=list&pageIndex=1&pageUnit=10">윈도우 필름(<i class="num">165</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403004&pgMode=list&pageIndex=1&pageUnit=10">하드코팅 필름(<i class="num">4</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403005&pgMode=list&pageIndex=1&pageUnit=10">인테리어 필름(<i class="num">88</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403006&pgMode=list&pageIndex=1&pageUnit=10">인쇄코팅 필름(<i class="num">33</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403007&pgMode=list&pageIndex=1&pageUnit=10">전기전자용 필름(<i class="num">28</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403008&pgMode=list&pageIndex=1&pageUnit=10">디스플레이용 코팅필름(<i class="num">85</i>)</a></li>
+										</ul>			
+								</li>
+							</ul>
+					</div>
+					<!-- 2,3뎁스 추가건 : e-->
+				</div>
+	<div class="category-list list05">
+					<div class="category-list-tit">
+						<a href="#">생활 화학</a>
+					</div>
+					<!-- 2,3뎁스 추가건 : s-->
+					<div class="category-list-ul">
+						<ul class="category-list-ul-content">
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0501000" class="depth03-title">화장품</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0501000&smlCateCd=0501001&pgMode=list&pageIndex=1&pageUnit=10">화장품(<i class="num">44</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0501000&smlCateCd=0501002&pgMode=list&pageIndex=1&pageUnit=10">화장품 원료(<i class="num">949</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0501000&smlCateCd=0501003&pgMode=list&pageIndex=1&pageUnit=10">화장품 제조(<i class="num">45</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0501000&smlCateCd=0501004&pgMode=list&pageIndex=1&pageUnit=10">화장품 용기(<i class="num">478</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0502000" class="depth03-title">식품 화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0502000&smlCateCd=0502001&pgMode=list&pageIndex=1&pageUnit=10">식품 화학(<i class="num">66</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0502000&smlCateCd=0502002&pgMode=list&pageIndex=1&pageUnit=10">식품 첨가물(<i class="num">209</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0502000&smlCateCd=0502003&pgMode=list&pageIndex=1&pageUnit=10">사료 첨가제(<i class="num">87</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0503000" class="depth03-title">생활화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503001&pgMode=list&pageIndex=1&pageUnit=10">생활화학(<i class="num">224</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503002&pgMode=list&pageIndex=1&pageUnit=10">세탁용품(<i class="num">92</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503003&pgMode=list&pageIndex=1&pageUnit=10">주방 세정제(<i class="num">143</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503004&pgMode=list&pageIndex=1&pageUnit=10">청소용 화학품(<i class="num">305</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503005&pgMode=list&pageIndex=1&pageUnit=10">가정용 에어로졸(<i class="num">17</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503006&pgMode=list&pageIndex=1&pageUnit=10">항균·살균(<i class="num">259</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503007&pgMode=list&pageIndex=1&pageUnit=10">모발관리(<i class="num">8</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0504000" class="depth03-title">건축용 화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504001&pgMode=list&pageIndex=1&pageUnit=10">건축용 화학(<i class="num">1070</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504002&pgMode=list&pageIndex=1&pageUnit=10">방수제(<i class="num">387</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504003&pgMode=list&pageIndex=1&pageUnit=10">발수제(<i class="num">69</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504004&pgMode=list&pageIndex=1&pageUnit=10">바닥 코팅제(<i class="num">215</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504005&pgMode=list&pageIndex=1&pageUnit=10">보수제(<i class="num">127</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0505000" class="depth03-title">자동차용 화학</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0505000&smlCateCd=0505001&pgMode=list&pageIndex=1&pageUnit=10">자동차용 화학(<i class="num">180</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0505000&smlCateCd=0505002&pgMode=list&pageIndex=1&pageUnit=10">자동차용 오일(<i class="num">309</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0505000&smlCateCd=0505003&pgMode=list&pageIndex=1&pageUnit=10">자동차 용품(<i class="num">90</i>)</a></li>
+										</ul>			
+								</li>
+							</ul>
+					</div>
+					<!-- 2,3뎁스 추가건 : e-->
+				</div>
+	<div class="category-list list06">
+					<div class="category-list-tit">
+						<a href="#">화학 산업</a>
+					</div>
+					<!-- 2,3뎁스 추가건 : s-->
+					<div class="category-list-ul">
+						<ul class="category-list-ul-content">
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0601000" class="depth03-title">비료</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0601000&smlCateCd=0601001&pgMode=list&pageIndex=1&pageUnit=10">비료(<i class="num">1782</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0601000&smlCateCd=0601002&pgMode=list&pageIndex=1&pageUnit=10">복합비료(<i class="num">210</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0601000&smlCateCd=0601003&pgMode=list&pageIndex=1&pageUnit=10">질소비료(<i class="num">3</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0601000&smlCateCd=0601004&pgMode=list&pageIndex=1&pageUnit=10">인산비료(<i class="num">7</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0602000" class="depth03-title">농약</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0602000&smlCateCd=0602001&pgMode=list&pageIndex=1&pageUnit=10">농약(<i class="num">295</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0602000&smlCateCd=0602002&pgMode=list&pageIndex=1&pageUnit=10">제초제(<i class="num">114</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0602000&smlCateCd=0602003&pgMode=list&pageIndex=1&pageUnit=10">살충제(<i class="num">405</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0602000&smlCateCd=0602004&pgMode=list&pageIndex=1&pageUnit=10">살선충제(<i class="num">56</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0603000" class="depth03-title">화학 섬유</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603001&pgMode=list&pageIndex=1&pageUnit=10">화학 섬유(<i class="num">532</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603002&pgMode=list&pageIndex=1&pageUnit=10">탄소 섬유(<i class="num">13</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603003&pgMode=list&pageIndex=1&pageUnit=10">유리 섬유(<i class="num">22</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603004&pgMode=list&pageIndex=1&pageUnit=10">유기 섬유(<i class="num">0</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603006&pgMode=list&pageIndex=1&pageUnit=10">아라미드 섬유(<i class="num">8</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603010&pgMode=list&pageIndex=1&pageUnit=10">섬유 화학(<i class="num">308</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0604000" class="depth03-title">바이오 산업</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604001&pgMode=list&pageIndex=1&pageUnit=10">바이오 산업(<i class="num">187</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604002&pgMode=list&pageIndex=1&pageUnit=10">의약 바이오(<i class="num">685</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604003&pgMode=list&pageIndex=1&pageUnit=10">산업 바이오(<i class="num">17</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604004&pgMode=list&pageIndex=1&pageUnit=10">식품 바이오(<i class="num">9</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604005&pgMode=list&pageIndex=1&pageUnit=10">에너지 바이오(<i class="num">17</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0605000" class="depth03-title">화학 소재</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605001&pgMode=list&pageIndex=1&pageUnit=10">화학 소재(<i class="num">311</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605002&pgMode=list&pageIndex=1&pageUnit=10">디스플레이 소재(<i class="num">209</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605003&pgMode=list&pageIndex=1&pageUnit=10">반도체 공정 소재(<i class="num">256</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605004&pgMode=list&pageIndex=1&pageUnit=10">2차전지 소재(<i class="num">64</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605005&pgMode=list&pageIndex=1&pageUnit=10">정밀화학 소재(<i class="num">527</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605006&pgMode=list&pageIndex=1&pageUnit=10">에너지 소재(<i class="num">24</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0606000" class="depth03-title">폐수·폐기물</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606001&pgMode=list&pageIndex=1&pageUnit=10">폐기물(<i class="num">26</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606002&pgMode=list&pageIndex=1&pageUnit=10">재활용(<i class="num">26</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606003&pgMode=list&pageIndex=1&pageUnit=10">일반폐기물(<i class="num">12</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606004&pgMode=list&pageIndex=1&pageUnit=10">흡착제/탈취제(<i class="num">59</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606005&pgMode=list&pageIndex=1&pageUnit=10">폐수 처리 약품(<i class="num">281</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0607000" class="depth03-title">기타 화학산업</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0607000&smlCateCd=0607001&pgMode=list&pageIndex=1&pageUnit=10">기타 화학산업(<i class="num">1473</i>)</a></li>
+										</ul>			
+								</li>
+							</ul>
+					</div>
+					<!-- 2,3뎁스 추가건 : e-->
+				</div>
+	<div class="category-list list07">
+					<div class="category-list-tit">
+						<a href="#">화학 장치</a>
+					</div>
+					<!-- 2,3뎁스 추가건 : s-->
+					<div class="category-list-ul">
+						<ul class="category-list-ul-content">
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0701000" class="depth03-title">포장</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701001&pgMode=list&pageIndex=1&pageUnit=10">포장(<i class="num">139</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701002&pgMode=list&pageIndex=1&pageUnit=10">화학물 포장(<i class="num">179</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701003&pgMode=list&pageIndex=1&pageUnit=10">수출 포장(<i class="num">95</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701004&pgMode=list&pageIndex=1&pageUnit=10">포장자재(<i class="num">1308</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701005&pgMode=list&pageIndex=1&pageUnit=10">포장기계(<i class="num">796</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0702000" class="depth03-title">화학기자재</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0702000&smlCateCd=0702001&pgMode=list&pageIndex=1&pageUnit=10">화학기자재(<i class="num">1346</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0702000&smlCateCd=0702002&pgMode=list&pageIndex=1&pageUnit=10">분석장비(<i class="num">1064</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0702000&smlCateCd=0702003&pgMode=list&pageIndex=1&pageUnit=10">이화학기기(<i class="num">452</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0702000&smlCateCd=0702004&pgMode=list&pageIndex=1&pageUnit=10">실험장비(<i class="num">293</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0703000" class="depth03-title">화학기계</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0703000&smlCateCd=0703001&pgMode=list&pageIndex=1&pageUnit=10">화학 기계(<i class="num">1085</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0703000&smlCateCd=0703002&pgMode=list&pageIndex=1&pageUnit=10">화공 기계(<i class="num">87</i>)</a></li>
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0703000&smlCateCd=0703003&pgMode=list&pageIndex=1&pageUnit=10">코팅 기계(<i class="num">179</i>)</a></li>
+										</ul>			
+								</li>
+							</ul>
+					</div>
+					<!-- 2,3뎁스 추가건 : e-->
+				</div>
+	<div class="category-list list08">
+					<div class="category-list-tit">
+						<a href="#">기타 산업</a>
+					</div>
+					<!-- 2,3뎁스 추가건 : s-->
+					<div class="category-list-ul">
+						<ul class="category-list-ul-content">
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0801000" class="depth03-title">OEM</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0801000&smlCateCd=0801001&pgMode=list&pageIndex=1&pageUnit=10">OEM(<i class="num">8</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0802000" class="depth03-title">컨설팅</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0802000&smlCateCd=0802001&pgMode=list&pageIndex=1&pageUnit=10">컨설팅(<i class="num">65</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0803000" class="depth03-title">시험기관</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0803000&smlCateCd=0803001&pgMode=list&pageIndex=1&pageUnit=10">시험기관(<i class="num">6</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0804000" class="depth03-title">세무·변리·법무</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0804000&smlCateCd=0804001&pgMode=list&pageIndex=1&pageUnit=10">세무·변리·법무(<i class="num">0</i>)</a></li>
+										</ul>			
+								</li>
+							<li class="grid-item">
+									<a href="/view.do?no=12&mdmCateCd=0805000" class="depth03-title">기타 산업</a>
+									<ul class="depth03-list">
+										<li class="depth03-item"><a href="/view.do?no=12&mdmCateCd=0805000&smlCateCd=0805001&pgMode=list&pageIndex=1&pageUnit=10">기타 산업(<i class="num">564</i>)</a></li>
+										</ul>			
+								</li>
+							</ul>
+					</div>
+					<!-- 2,3뎁스 추가건 : e-->
+				</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="category-dim"></div><!-- common-category : E -->	
+</header>
+
+<div id="m-category-pop">
+	<div id="category-inwrap">
+		<div class="login">
+<div class="login-box">
+				<p class="tit">
+					<span>켐녹</span>은 화학산업 비즈니스 플랫폼 입니다.
+				</p>
+				<a href="/view.do?no=login" class="login-btn"><span>로그인</span></a>
+				<div class="member-btn">
+					<a href="/view.do?no=find"><span>아이디ㆍ비밀번호찾기</span></a> <i></i>
+					<a href="/view.do?no=join"><span>회원무료가입</span></a>
+				</div>
+				<div class="cr"></div>
+			</div>
+	</div>
+		<!-- login :: E -->
+	
+		<!-- mobile-menu : S -->
+		<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<div class="mo-menu-wrapper">
+	<ul class="depth01-list">
+		<li class="depth01-item">
+				<a href="#" class="depth01-tit">석유 화학</a>
+				<ul class="depth02-list">
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">가스</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">가스<span>(176)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">산업용가스<span>(306)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">일반용가스<span>(25)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">의료용가스<span>(37)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0101000&smlCateCd=0101005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">가스용기 및 부품<span>(480)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">고무</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0102000&smlCateCd=0102001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">고무<span>(185)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0102000&smlCateCd=0102002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">고무 첨가제<span>(285)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0102000&smlCateCd=0102003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">고무제품<span>(948)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">플라스틱</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0103000&smlCateCd=0103001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">플라스틱<span>(123)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0103000&smlCateCd=0103002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">플라스틱 수지<span>(581)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0103000&smlCateCd=0103003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">플라스틱 제품<span>(1391)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0103000&smlCateCd=0103004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">분쇄품/스크랩<span>(49)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">합성수지</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">합성수지<span>(1722)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">ABS<span>(120)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">PE<span>(84)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">PP<span>(81)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">EVA<span>(24)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">PVC<span>(73)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">아크릴<span>(102)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104008&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">멜라민<span>(7)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104009&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">우레탄<span>(198)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0104000&smlCateCd=0104010&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에폭시<span>(49)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">무기화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">무기화합물<span>(170)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">산화물<span>(28)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">황산염<span>(3)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">염화물<span>(6)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">인산염<span>(9)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">규산염<span>(2)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">탄산염<span>(0)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0105000&smlCateCd=0105008&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">질산염<span>(3)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">유기화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">유기화합물<span>(35)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">아민<span>(2)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">유기산<span>(4)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">벤조산<span>(0)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0106000&smlCateCd=0106005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">나트륨<span>(1)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">유기용제</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">유기용제<span>(259)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">알코올<span>(13)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">탄화수소계 유기용제<span>(3)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에스테르계 유기용제<span>(0)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에테르계 유기용제<span>(0)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0107000&smlCateCd=0107006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">케톤계 유기용제<span>(0)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">기타 석유 화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0108000&smlCateCd=0108001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">기타 석유 화학<span>(725)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0108000&smlCateCd=0108002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화학 원료<span>(1206)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0108000&smlCateCd=0108005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화공약품<span>(1258)</span></a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+			</li>
+		<li class="depth01-item">
+				<a href="#" class="depth01-tit">정밀 화학</a>
+				<ul class="depth02-list">
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">화학첨가제</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화학첨가제<span>(1269)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">시약<span>(2292)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">안료 & 염료<span>(585)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">중간체<span>(4)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">경화제<span>(21)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">난연제<span>(103)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201008&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">계면활성제<span>(435)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201009&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">산화방지제<span>(31)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0201000&smlCateCd=0201010&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">대전방지제<span>(106)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">산업용 오일</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">산업용 오일<span>(438)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">구리스<span>(414)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">윤활유<span>(644)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">절삭유<span>(652)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">열처리유<span>(59)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">방청유<span>(152)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">소성가공유<span>(119)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0202000&smlCateCd=0202008&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">합성오일<span>(11)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">표면처리 화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">표면처리제<span>(646)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">박리제<span>(107)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">세척제<span>(623)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">광택제<span>(87)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">수처리제<span>(420)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0203000&smlCateCd=0203006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">도금 약품<span>(199)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">에어로졸</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에어로졸<span>(50)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">문구용 에어로졸<span>(1)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">일반용 에어로졸<span>(3)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">전기전자용 에어로졸<span>(35)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0204000&smlCateCd=0204005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">산업용 에어로졸<span>(371)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">실리콘</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실리콘<span>(294)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실리콘 오일<span>(20)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실리콘 소포제<span>(41)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실리콘 이형제<span>(33)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실리콘 컴파운더<span>(8)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실리콘 바니쉬<span>(10)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0205000&smlCateCd=0205007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">RTV 실리콘<span>(41)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">기타 정밀 화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0206000&smlCateCd=0206001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">기타 정밀 화학<span>(911)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0206000&smlCateCd=0206002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">고분자 합성수지<span>(657)</span></a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+			</li>
+		<li class="depth01-item">
+				<a href="#" class="depth01-tit">접착 & 코팅</a>
+				<ul class="depth02-list">
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">접착제</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">접착제<span>(664)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에멀전 접착제<span>(107)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">합성고무 접착제<span>(88)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">합성수지 접착제<span>(45)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에폭시 접착제<span>(168)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">우레탄 접착제<span>(97)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">순간 접착제<span>(117)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301008&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">혐기성 접착제<span>(39)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301009&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">UV 접착제<span>(33)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0301000&smlCateCd=0301010&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">핫멜트 접착제<span>(99)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">실란트</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실란트<span>(105)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">폴리우레탄 실란트<span>(31)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실리콘 실란트<span>(277)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">아크릴 실란트<span>(45)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0302000&smlCateCd=0302005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">변성 실란트<span>(25)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">점착 테이프</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0303000&smlCateCd=0303001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">점착 테이프<span>(948)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0303000&smlCateCd=0303002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">점착제<span>(74)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0303000&smlCateCd=0303003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">양면 점착 테이프<span>(411)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0303000&smlCateCd=0303004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">단면 점착 테이프<span>(408)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">코팅</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">코팅<span>(442)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">코팅원료<span>(102)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">불소 코팅<span>(62)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">나노 코팅<span>(31)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실리콘 코팅<span>(42)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">우레탄 코팅<span>(15)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에폭시 코팅<span>(7)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304008&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">세라믹 코팅<span>(25)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0304000&smlCateCd=0304009&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">프라이머<span>(67)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">페인트&도료</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">페인트<span>(134)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">도료<span>(619)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">페인트 원료<span>(112)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">산업용 페인트<span>(73)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">건축용 페인트<span>(96)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">인테리어용 페인트<span>(10)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0305000&smlCateCd=0305007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">방수용 페인트<span>(19)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">인쇄</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">인쇄<span>(102)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">잉크<span>(570)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">토너<span>(3)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">인쇄부자재<span>(86)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0306000&smlCateCd=0306005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">인쇄기계<span>(243)</span></a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+			</li>
+		<li class="depth01-item">
+				<a href="#" class="depth01-tit">산업용 필름</a>
+				<ul class="depth02-list">
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">필름</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">필름<span>(160)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">PET 필름<span>(41)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">PI 필름<span>(11)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">OPP 필름<span>(7)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">PE 필름<span>(47)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">PC 필름<span>(5)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0401000&smlCateCd=0401007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">PVC 필름<span>(63)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">기능성 필름</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">기능성 필름<span>(275)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">광학용 필름<span>(25)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">생분해성 필름<span>(26)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">의료용 필름<span>(9)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">농업용 필름<span>(111)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">포장용 필름<span>(180)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0402000&smlCateCd=0402007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">WRAP(랩)<span>(28)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">코팅 필름</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">코팅 필름<span>(93)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">이형 필름<span>(67)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">윈도우 필름<span>(165)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">하드코팅 필름<span>(4)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">인테리어 필름<span>(88)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">인쇄코팅 필름<span>(33)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">전기전자용 필름<span>(28)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0403000&smlCateCd=0403008&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">디스플레이용 코팅필름<span>(85)</span></a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+			</li>
+		<li class="depth01-item">
+				<a href="#" class="depth01-tit">생활 화학</a>
+				<ul class="depth02-list">
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">화장품</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0501000&smlCateCd=0501001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화장품<span>(44)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0501000&smlCateCd=0501002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화장품 원료<span>(949)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0501000&smlCateCd=0501003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화장품 제조<span>(45)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0501000&smlCateCd=0501004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화장품 용기<span>(478)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">식품 화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0502000&smlCateCd=0502001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">식품 화학<span>(66)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0502000&smlCateCd=0502002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">식품 첨가물<span>(209)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0502000&smlCateCd=0502003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">사료 첨가제<span>(87)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">생활화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">생활화학<span>(224)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">세탁용품<span>(92)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">주방 세정제<span>(143)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">청소용 화학품<span>(305)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">가정용 에어로졸<span>(17)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">항균·살균<span>(259)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0503000&smlCateCd=0503007&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">모발관리<span>(8)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">건축용 화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">건축용 화학<span>(1070)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">방수제<span>(387)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">발수제<span>(69)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">바닥 코팅제<span>(215)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0504000&smlCateCd=0504005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">보수제<span>(127)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">자동차용 화학</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0505000&smlCateCd=0505001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">자동차용 화학<span>(180)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0505000&smlCateCd=0505002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">자동차용 오일<span>(309)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0505000&smlCateCd=0505003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">자동차 용품<span>(90)</span></a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+			</li>
+		<li class="depth01-item">
+				<a href="#" class="depth01-tit">화학 산업</a>
+				<ul class="depth02-list">
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">비료</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0601000&smlCateCd=0601001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">비료<span>(1782)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0601000&smlCateCd=0601002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">복합비료<span>(210)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0601000&smlCateCd=0601003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">질소비료<span>(3)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0601000&smlCateCd=0601004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">인산비료<span>(7)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">농약</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0602000&smlCateCd=0602001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">농약<span>(295)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0602000&smlCateCd=0602002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">제초제<span>(114)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0602000&smlCateCd=0602003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">살충제<span>(405)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0602000&smlCateCd=0602004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">살선충제<span>(56)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">화학 섬유</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화학 섬유<span>(532)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">탄소 섬유<span>(13)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">유리 섬유<span>(22)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">유기 섬유<span>(0)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">아라미드 섬유<span>(8)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0603000&smlCateCd=0603010&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">섬유 화학<span>(308)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">바이오 산업</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">바이오 산업<span>(187)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">의약 바이오<span>(685)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">산업 바이오<span>(17)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">식품 바이오<span>(9)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0604000&smlCateCd=0604005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에너지 바이오<span>(17)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">화학 소재</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화학 소재<span>(311)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">디스플레이 소재<span>(209)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">반도체 공정 소재<span>(256)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">2차전지 소재<span>(64)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">정밀화학 소재<span>(527)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0605000&smlCateCd=0605006&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">에너지 소재<span>(24)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">폐수·폐기물</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">폐기물<span>(26)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">재활용<span>(26)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">일반폐기물<span>(12)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">흡착제/탈취제<span>(59)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0606000&smlCateCd=0606005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">폐수 처리 약품<span>(281)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">기타 화학산업</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0607000&smlCateCd=0607001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">기타 화학산업<span>(1473)</span></a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+			</li>
+		<li class="depth01-item">
+				<a href="#" class="depth01-tit">화학 장치</a>
+				<ul class="depth02-list">
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">포장</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">포장<span>(139)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화학물 포장<span>(179)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">수출 포장<span>(95)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">포장자재<span>(1308)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0701000&smlCateCd=0701005&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">포장기계<span>(796)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">화학기자재</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0702000&smlCateCd=0702001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화학기자재<span>(1346)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0702000&smlCateCd=0702002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">분석장비<span>(1064)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0702000&smlCateCd=0702003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">이화학기기<span>(452)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0702000&smlCateCd=0702004&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">실험장비<span>(293)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">화학기계</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0703000&smlCateCd=0703001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화학 기계<span>(1085)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0703000&smlCateCd=0703002&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">화공 기계<span>(87)</span></a>
+									</li>
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0703000&smlCateCd=0703003&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">코팅 기계<span>(179)</span></a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+			</li>
+		<li class="depth01-item">
+				<a href="#" class="depth01-tit">기타 산업</a>
+				<ul class="depth02-list">
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">OEM</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0801000&smlCateCd=0801001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">OEM<span>(8)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">컨설팅</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0802000&smlCateCd=0802001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">컨설팅<span>(65)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">시험기관</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0803000&smlCateCd=0803001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">시험기관<span>(6)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">세무·변리·법무</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0804000&smlCateCd=0804001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">세무·변리·법무<span>(0)</span></a>
+									</li>
+								</ul>
+						</li>
+					<li class="depth02-item">
+							<a href="#" class="depth02-tit">기타 산업</a>
+							<ul class="depth03-list">
+								<li class="depth03-item">
+										<a href="/view.do?no=12&mdmCateCd=0805000&smlCateCd=0805001&pgMode=list&pageIndex=1&pageUnit=10" class="depth03-tit">기타 산업<span>(564)</span></a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+			</li>
+		</ul>
+</div><!-- mobile-menu : E -->
+		
+		<div class="close-box">
+			<a href="#n" onclick="cc_hidden('m-category-pop','none');return false;"></a>
+		</div>
+		<!--- close-box :: E -->
+	</div></div>
+
+	<!-- ==============================================================================================
+		 </header>  는 inc_navi.jsp 에서 닫힙니다. (sub include를 위함)
+================================================================================================ -->
+
+<!-- 반응형 이미지맵 -->
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	layerBannerBckClr();
+	siteTopbannerFn();
+});
+</script>
+<!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var d = window.document;
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "f8fc6cb9-cdd6-4244-98b0-7f7346248911"
+  });
+</script>
+<!-- End Channel Plugin -->
+
+<script>
+function layerBannerBckClr(){
+	
+		var color = "#30A973";
+		$('.siteTop_banner').css('background-color', color);
+	
+}
+
+//사이트 최상단 배너
+function siteTopbannerFn(){
+	var siteTop_banner = $('.siteTop_banner');
+	
+	var prdSet = "";
+	
+		prdSet = "23";
+	
+	
+	if(siteTop_banner.length){
+		function setCookie2(name, value, expiredays) {
+			var today = new Date();
+		    today.setTime(today.getTime() + expiredays*60*60*1000);
+		    document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + ';'
+		}
+		
+		//닫기 버튼 클릭했을시
+		siteTop_banner.find('.close').on('click',function(){
+			setCookie2('siteTop_banner', 'rangs', prdSet);
+			siteTop_banner.slideUp('fast');
+		});
+		
+		//쿠키 없을 시 팝업 열림
+		function getCookie2(name){   
+			
+			var wcname = name + '=';
+			var wcstart, wcend, end;
+			var i = 0;   
+			while(i <= document.cookie.length) {           
+			wcstart = i; 
+			wcend   = (i + wcname.length);           
+			if(document.cookie.substring(wcstart, wcend) == wcname) {   
+				if((end = document.cookie.indexOf(';', wcend)) == -1)	end = document.cookie.length;                   
+				return document.cookie.substring(wcend, end);           
+			}           
+
+			i = document.cookie.indexOf('', i) + 1;           
+			 
+			if(i == 0)                   
+				break;   
+			} 
+			return '';
+		}
+
+		if(getCookie2('siteTop_banner') != 'rangs') { 
+			siteTop_banner.slideDown(0);
+		}
+	};
+};
+</script>
+<div class="layerpop_bg"></div><!-- header:E--><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142199582-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142199582-1');
+</script>
+<link rel="stylesheet" media="all" href="/portal/css/subHead.css"/>
+
+<!-- subHead 가 다를시 파일을 추가 생성하고 include 잡아주셔야 합니다.-->
+<script>
+//로딩화면 보이기
+function maskShow(){
+	var height = $(document).scrollTop();
+	$('#menuLoading-mask').css('height', document.body.scrollHeight);
+	//$('#menuLoading-img').css('top', (document.body.clientHeight / 2) + height);
+	//$('#menuLoading-img').css('left', (document.body.clientWidth  / 2));
+	$('#menuLoading-mask').show();
+}
+//로딩화면 숨기기
+function maskHide(){
+	$('#menuLoading-mask').hide();
+}
+</script>
+<div id="menuLoading-mask"><div id="menuLoading-img"></div></div>	
+<!-- page:s -->			 
+
+
+
+
+
+
+
+<div id="sub_menu-box">	
+	<div id="inwrap">
+		
+		
+			
+		
+		
+		
+		
+			
+			
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		<!--<a href="/view.do?no=13" class="home-btn" title="화학기업 메인으로">화학기업 메인으로</a>  -->
+		
+		<div class="sub-menu">
+			
+				
+				
+				
+				
+				
+				
+					<ul class="depth02" id="portalSubMenuUl">
+					</ul>
+				
+				
+			
+
+			<script type="text/javascript" language="javascript">
+			$(document).ready(function() {
+				
+				$("#sw").keydown(function(key){
+					if(key.keyCode == 13){
+						
+						searchAction();
+						return false;
+					}
+				});
+
+				var a = 0;
+				var sub_menu_active_li = 0;
+				$('.sub-menu>ul>li').each(function(){
+					if($(this).hasClass('active')){
+						sub_menu_active_li = a;
+					}
+					a++;
+				});
+
+				//depth2-slide
+				var $submenuframe = $('.sub-menu');
+								
+				$submenuframe.sly({
+					horizontal: 1,
+					itemNav: 'basic',
+					smart: 1,
+					activateOn: 'click',
+					mouseDragging: 1,
+					touchDragging: 1,
+					releaseSwing: 1,
+					startAt: sub_menu_active_li,
+					scrollBy: 1,
+					activatePageOn: 'click',
+					speed: 0,
+					elasticBounds: 1,
+					easing: 'easeOutExpo',
+					dragHandle: 1,
+					dynamicHandle: 1,
+					clickBar: 2
+				});
+				
+				setTimeout(function() {
+					
+					$submenuframe.stop().animate({opacity:1},200);
+				},100)
+			});
+			
+				$(function(){					
+					
+					$('.sub-menu').find('li > a').on('click',function(){
+						var lidex = $(this).parent('li').index()+1;
+						
+						$('.sub-menu').find('li').each(function(){
+							$(this).removeClass('active');
+						});
+												
+
+					});
+						
+				});
+				
+				function sizeControlsm(width) {
+					width = parseInt(width);
+					var bodyHeight = document.documentElement.clientHeight; 
+					var bodyWidth = document.documentElement.clientWidth; 
+					var chkHeader = $('header').outerHeight();
+
+					$('.sub-menu').sly('reload');
+				}
+				jQuery(function($){
+					sizeControlsm($(this).width());
+					$(window).resize(function() {
+						if(this.resizeTO) {
+							clearTimeout(this.resizeTO);
+						}
+						this.resizeTO = setTimeout(function() {
+							$(this).trigger('resizeEnd');
+						}, 50);
+					});
+				});	
+				$(window).on('resizeEnd', function() {
+					sizeControlsm($(this).width());
+				});
+				$(window).load( function() {
+					sizeControlsm($(this).width());
+				});
+				</script>
+
+		</div><!-- sub-menu :: E -->
+
+		<div class="cr"></div>	
+	</div><!-- inwrap :: E -->
+</div><!-- sub_menu :: E -->
+<!-- subHead 가 다를시 파일을 추가 생성하고 include 잡아주셔야 합니다.-->
+
+
+
+
+
+<script type="text/javascript">
+//쿠키가져오기
+function getCookie(cName){
+	cName = cName + '=';
+	var cookieData = document.cookie;
+	var start = cookieData.indexOf(cName);
+	var cValue = '';
+	if(start != -1){
+		start += cName.length;
+		var end = cookieData.indexOf(';', start);
+		if(end == -1)end = cookieData.length;
+		cValue = cookieData.substring(start, end);
+	}
+	return unescape(cValue);
+}
+function openPopupShow(popupSeq,width,height,xPos,yPos,title){
+	var heigthTmp = parseInt(height) + 35;
+	console.log(heigthTmp);
+	window.open("/popupView.do?popupSeq="+popupSeq,title,"width=" + width + ",height="+heigthTmp+",left="+xPos+",top="+yPos +",toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no");
+}
+</script>
+
+
+
+
+<!-- page:s -->
+<div id="contents">
+	<div id="inwrap">
+		<div class="contents-wrap">
+			 
+			 	
+					
+					
+
+
+<!-- 서브 타이틀 :: S -->
+<script type="text/javascript"				src	="/share/cmmJs/jqueryFromCheck.js"></script>
+<script type="text/javascript" src="/share/cmmJs/lctn.js"></script>
+
+<!--
+<div class="sub-title">
+	<h3 class="b-tit">등록기업</h3>
+	<p class="c-tit"></p>
+	<p class="s-tit">기업 등록하면 새로운 거래처가 확보됩니다.</p>
+	<div class="cr"></div>
+</div>
+  -->
+<!-- 서브 타이틀 :: E -->
+<!-- 서브 카테고리 :: S -->
+
+
+
+
+
+	
+<div class="sub-category-wrap">
+		<div class="scs-controls">
+			<button class="prevP"><span>prev</span></button>
+			<button class="nextP"><span>next</span></button>
+		</div>
+	<div class="sub-category">
+		<ul class="swiper-wrapper tabs">
+			<li class="swiper-slide sub-category-list01  active">
+				<a href="/view.do?no=13&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">
+					<span>전체</span>
+				</a>
+			</li>
+			
+			
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+					<li class="swiper-slide sub-category-list09 ">
+						<a href="/view.do?no=13&lrgCateCd=0100000&smlCateCd=&mdmCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">					
+							<span>석유 화학</span>
+						</a>
+					</li>
+				
+			
+			
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+					<li class="swiper-slide sub-category-list07 ">
+						<a href="/view.do?no=13&lrgCateCd=0200000&smlCateCd=&mdmCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">					
+							<span>정밀 화학</span>
+						</a>
+					</li>
+				
+			
+			
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+					<li class="swiper-slide sub-category-list07 ">
+						<a href="/view.do?no=13&lrgCateCd=0300000&smlCateCd=&mdmCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">					
+							<span>접착 & 코팅</span>
+						</a>
+					</li>
+				
+			
+			
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+					<li class="swiper-slide sub-category-list04 ">
+						<a href="/view.do?no=13&lrgCateCd=0400000&smlCateCd=&mdmCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">					
+							<span>산업용 필름</span>
+						</a>
+					</li>
+				
+			
+			
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+					<li class="swiper-slide sub-category-list06 ">
+						<a href="/view.do?no=13&lrgCateCd=0500000&smlCateCd=&mdmCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">					
+							<span>생활 화학</span>
+						</a>
+					</li>
+				
+			
+			
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+					<li class="swiper-slide sub-category-list08 ">
+						<a href="/view.do?no=13&lrgCateCd=0600000&smlCateCd=&mdmCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">					
+							<span>화학 산업</span>
+						</a>
+					</li>
+				
+			
+			
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+					<li class="swiper-slide sub-category-list04 ">
+						<a href="/view.do?no=13&lrgCateCd=0700000&smlCateCd=&mdmCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">					
+							<span>화학 장치</span>
+						</a>
+					</li>
+				
+			
+			
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+						
+						
+						
+							
+						
+					
+					<li class="swiper-slide sub-category-list06 ">
+						<a href="/view.do?no=13&lrgCateCd=0800000&smlCateCd=&mdmCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" class="sub-category-btn">					
+							<span>기타 산업</span>
+						</a>
+					</li>
+				
+			
+		</ul>	
+		<span class="bline"></span>
+	</div> <!-- sub-category-tab ::E -->
+
+		
+		
+		
+		
+			
+		
+		<div class="sub-category-tab hide " id="sub-category-tab01">
+			<div class="category-tab-ul">
+				<div class="li ">
+					<a href="/view.do?no=13&lrgCateCd=&smlCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10"
+						class="on"><span>전체</span>
+					</a>
+				</div>
+				
+				
+					
+					
+				
+				
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0101000&smlCateCd=0101&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>가스</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0102000&smlCateCd=0102&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>고무</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0103000&smlCateCd=0103&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>플라스틱</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0104000&smlCateCd=0104&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>합성수지</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0105000&smlCateCd=0105&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>무기화학</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0106000&smlCateCd=0106&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>유기화학</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0107000&smlCateCd=0107&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>유기용제</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0108000&smlCateCd=0108&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>기타 석유 화학</span>
+						</a>
+					</div>
+				
+				
+				<div class="cr"></div>
+			</div>
+			
+			<!--  소분류 카테고리 추가 : 201214 -->
+			
+		
+			</div>
+			
+
+		
+		
+		
+		
+			
+		
+		<div class="sub-category-tab hide " id="sub-category-tab01">
+			<div class="category-tab-ul">
+				<div class="li ">
+					<a href="/view.do?no=13&lrgCateCd=&smlCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10"
+						class="on"><span>전체</span>
+					</a>
+				</div>
+				
+				
+					
+					
+				
+				
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0201000&smlCateCd=0201&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>화학첨가제</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0202000&smlCateCd=0202&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>산업용 오일</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0203000&smlCateCd=0203&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>표면처리 화학</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0204000&smlCateCd=0204&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>에어로졸</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0205000&smlCateCd=0205&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>실리콘</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0206000&smlCateCd=0206&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>기타 정밀 화학</span>
+						</a>
+					</div>
+				
+				
+				<div class="cr"></div>
+			</div>
+			
+			<!--  소분류 카테고리 추가 : 201214 -->
+			
+		
+			</div>
+			
+
+		
+		
+		
+		
+			
+		
+		<div class="sub-category-tab hide " id="sub-category-tab01">
+			<div class="category-tab-ul">
+				<div class="li ">
+					<a href="/view.do?no=13&lrgCateCd=&smlCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10"
+						class="on"><span>전체</span>
+					</a>
+				</div>
+				
+				
+					
+					
+				
+				
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0301000&smlCateCd=0301&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>접착제</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0302000&smlCateCd=0302&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>실란트</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0303000&smlCateCd=0303&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>점착 테이프</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0304000&smlCateCd=0304&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>코팅</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0305000&smlCateCd=0305&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>페인트&도료</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0306000&smlCateCd=0306&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>인쇄</span>
+						</a>
+					</div>
+				
+				
+				<div class="cr"></div>
+			</div>
+			
+			<!--  소분류 카테고리 추가 : 201214 -->
+			
+		
+			</div>
+			
+
+		
+		
+		
+		
+			
+		
+		<div class="sub-category-tab hide " id="sub-category-tab01">
+			<div class="category-tab-ul">
+				<div class="li ">
+					<a href="/view.do?no=13&lrgCateCd=&smlCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10"
+						class="on"><span>전체</span>
+					</a>
+				</div>
+				
+				
+					
+					
+				
+				
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0401000&smlCateCd=0401&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>필름</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0402000&smlCateCd=0402&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>기능성 필름</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0403000&smlCateCd=0403&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>코팅 필름</span>
+						</a>
+					</div>
+				
+				
+				<div class="cr"></div>
+			</div>
+			
+			<!--  소분류 카테고리 추가 : 201214 -->
+			
+		
+			</div>
+			
+
+		
+		
+		
+		
+			
+		
+		<div class="sub-category-tab hide " id="sub-category-tab01">
+			<div class="category-tab-ul">
+				<div class="li ">
+					<a href="/view.do?no=13&lrgCateCd=&smlCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10"
+						class="on"><span>전체</span>
+					</a>
+				</div>
+				
+				
+					
+					
+				
+				
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0501000&smlCateCd=0501&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>화장품</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0502000&smlCateCd=0502&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>식품 화학</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0503000&smlCateCd=0503&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>생활화학</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0504000&smlCateCd=0504&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>건축용 화학</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0505000&smlCateCd=0505&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>자동차용 화학</span>
+						</a>
+					</div>
+				
+				
+				<div class="cr"></div>
+			</div>
+			
+			<!--  소분류 카테고리 추가 : 201214 -->
+			
+		
+			</div>
+			
+
+		
+		
+		
+		
+			
+		
+		<div class="sub-category-tab hide " id="sub-category-tab01">
+			<div class="category-tab-ul">
+				<div class="li ">
+					<a href="/view.do?no=13&lrgCateCd=&smlCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10"
+						class="on"><span>전체</span>
+					</a>
+				</div>
+				
+				
+					
+					
+				
+				
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0601000&smlCateCd=0601&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>비료</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0602000&smlCateCd=0602&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>농약</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0603000&smlCateCd=0603&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>화학 섬유</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0604000&smlCateCd=0604&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>바이오 산업</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0605000&smlCateCd=0605&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>화학 소재</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0606000&smlCateCd=0606&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>폐수·폐기물</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0607000&smlCateCd=0607&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>기타 화학산업</span>
+						</a>
+					</div>
+				
+				
+				<div class="cr"></div>
+			</div>
+			
+			<!--  소분류 카테고리 추가 : 201214 -->
+			
+		
+			</div>
+			
+
+		
+		
+		
+		
+			
+		
+		<div class="sub-category-tab hide " id="sub-category-tab01">
+			<div class="category-tab-ul">
+				<div class="li ">
+					<a href="/view.do?no=13&lrgCateCd=&smlCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10"
+						class="on"><span>전체</span>
+					</a>
+				</div>
+				
+				
+					
+					
+				
+				
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0701000&smlCateCd=0701&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>포장</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0702000&smlCateCd=0702&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>화학기자재</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0703000&smlCateCd=0703&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>화학기계</span>
+						</a>
+					</div>
+				
+				
+				<div class="cr"></div>
+			</div>
+			
+			<!--  소분류 카테고리 추가 : 201214 -->
+			
+		
+			</div>
+			
+
+		
+		
+		
+		
+			
+		
+		<div class="sub-category-tab hide " id="sub-category-tab01">
+			<div class="category-tab-ul">
+				<div class="li ">
+					<a href="/view.do?no=13&lrgCateCd=&smlCateCd=&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10"
+						class="on"><span>전체</span>
+					</a>
+				</div>
+				
+				
+					
+					
+				
+				
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0801000&smlCateCd=0801&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>OEM</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0802000&smlCateCd=0802&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>컨설팅</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0803000&smlCateCd=0803&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>시험기관</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0804000&smlCateCd=0804&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>세무·변리·법무</span>
+						</a>
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="li ">
+						<a href="/view.do?no=13&lrgCateCd=&mdmCateCd=0805000&smlCateCd=0805&srchLctnSido=&srchLctnSigungu=&sw=&pageUnit=10" 
+							><span>기타 산업</span>
+						</a>
+					</div>
+				
+				
+				<div class="cr"></div>
+			</div>
+			
+			<!--  소분류 카테고리 추가 : 201214 -->
+			
+		
+			</div>
+			
+
+		
+</div>
+
+
+
+	
+
+
+<script type="text/javascript" src="/portal/js/sub-category.js"></script>
+
+
+<!-- 서브 카테고리 :: E -->
+
+<div class="board-list-box ppLst">
+	<div class="top-search">
+		
+<form name="search_form" id="search_form" method="get">
+	<input type="hidden" name="no" value="13"/>
+	<input type="hidden" name="lrgCateCd" value=""/>
+	<input type="hidden" name="smlCateCd" value=""/>
+	<input type="hidden" name="randomNum" value="0"/>
+
+		<div class="sub-right-box">
+			<span class="ppLstcate">
+				
+				
+				
+				'전체' 내 검색
+				
+			</span>
+
+				<select name="srchLctnSido" id="srchLctnSido" class="w70 sel_01" onchange="javascript:searchAction(); return false;">
+					<option selected disabled>시/도</option>
+				</select>
+				<select name="srchLctnSigungu" id="srchLctnSigungu" class="w130 sel_01" onchange="javascript:searchAction(); return false;">
+					<option selected disabled>구/시/군</option>
+				</select>
+			<div class="border-search-box">
+				<input type="text" value="" name="sw" id="sw" placeholder="예) 기업명, 주요제품">
+				<a href="#n" class="board-search" onclick="searchAction(); return false;"><span>검색</span></a>
+			</div>
+			<select title="목록 갯수을 선택해주세요" class="sel_01 vtop2 w120" name="pageUnit" id="pageUnit" onchange="searchAction();">
+				<option value="10"  selected="selected" >10개씩 보기</option>
+				<option value="20"  >20개씩 보기</option>
+				<option value="30"  >30개씩 보기</option>
+				<option value="50"  >50개씩 보기</option>
+				<option value="100"  >100개씩 보기</option>
+			</select>
+		</div>
+</form>
+		<div class="cr"></div>
+	</div>
+	
+	
+	<span class="u-gline-dpoint1 endtopnone"></span>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE003160','0306002'); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=16993&imgType=0030&nit=0050" alt="(주)에이치에스케미칼">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">(주)에이치에스케미칼</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">경기 부천시</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">특수 잉크 개발 및 생산</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">아크릴 윈도우, 키패드, 아이콘시트, 인서트, 인몰드 전용 잉크.</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#미러잉크
+	
+							#Solvent 잉크
+	
+							#강화유리 전용 잉크
+	
+							#핫멜트 잉크
+	
+							#기능성 잉크
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE003651','0302001'); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=20333&imgType=0030&nit=0050" alt="(주)티피실리콘">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">(주)티피실리콘</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">서울 강서구</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">전지전자전장용 실리콘 공급</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">전지전자전장용 실리콘 공급 전문</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#실리콘
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE000050',''); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=629&imgType=0030&nit=0050" alt="에스제이팩">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">에스제이팩</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">경기 포천시</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">식품포장지, 제약포장지, 화장품포장지, 그라비아안쇄, 라미네이팅, 형상파우치, 포장지임가공</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">포장지 및 인쇄 관련 세계를 향해 나아가는 회사. 에스제이팩입니다.</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#식품포장지
+	
+							#제약포장지
+	
+							#화장품포장지
+	
+							#그라비아인쇄
+	
+							#라미네이팅
+	
+							#형상파우치
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE001481','0703001'); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=10709&imgType=0030&nit=0050" alt="(주)오투버블">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">(주)오투버블</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">인천 남동구</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">마이크로버블, OH라디칼, 고농도 산소수, 여과스크린, 회전소포장치, 흡입 오토스트레이너</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">당사는 마이크로버블시스템을 제조하고 있지만, 궁극정인 목표는 물의 환원사용과 보호함이 원칙입니다.</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#마이크로버블
+	
+							#OH라디칼
+	
+							#고농도 산소수
+	
+							#여과스크린
+	
+							#회전소포장치
+	
+							#흡입 오토스트레이너
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE001862','0303001'); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=11575&imgType=0030&nit=0050" alt="(주)케이에프엠">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">(주)케이에프엠</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">충남 예산군</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">이형필름, 점착보호테이프, 필름인덱스</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">케른은 다기능의 이형필름과 점착보호테이프를 제공하는 이형제와 점착제 코팅분야 전문업체입니다.</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#이형필름
+	
+							#실리콘이형필름
+	
+							#OCA용 이형필름
+	
+							#불소 이형필름
+	
+							#점착보호테이프
+	
+							#공정용 실리콘테이프
+	
+							#보호용 실리콘테이프
+	
+							#자가점착테이프
+	
+							#공정용 아크릴테이프
+	
+							#보호용 아크릴테이프
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE003634','0108002'); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=20285&imgType=0030&nit=0050" alt="경기실업(주)">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">경기실업(주)</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">인천 동구</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">활석분 생산</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">활석분 전문생산업체</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#활석
+	
+							#탄산칼슘
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE000735','0104001'); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=19728&imgType=0030&nit=0050" alt="(주)동양우레탄">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">(주)동양우레탄</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">경기 화성시</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">스폰지 Foam 전문제조 가공기업</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">SPONGE FOAM 생산 및 가공시스템 첨단화로 세계속의 선진 기업이 되겠습니다.</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#스펀지류
+	
+							#점착제류
+	
+							#EMI류
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE000127',''); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=1211&imgType=0030&nit=0050" alt="진영실리텍">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">진영실리텍</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">경기 김포시</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">고무제품 성형과 소재 가공 전문기업</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">산업용, 전자용 실리콘 소재 성형 전문 기업</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#실리콘
+	
+							#고무
+	
+							#성형
+	
+							#식품
+	
+							#전기전자
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE000035','0604001'); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=556&imgType=0030&nit=0050" alt="(주)티엠비">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">(주)티엠비</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">대구 달서구</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">실리콘, 의약외품, 전자부품, 자동차부품, 광학필름, 화장품</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">The Global Leader of silicone products</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#실리콘
+	
+							#의약외품
+	
+							#전자부품
+	
+							#자동차부품
+	
+							#광학필름
+	
+							#화장품
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	
+	<div class="box_info cp">
+
+		<a href="#none" onclick="move_show('SITE003044','0203003'); return false;">
+		
+		<div class="info_wrap">
+			<div class="img">
+				
+					<img src="/cmm/file/showCpImgFile.do?siteImgSeq=18226&imgType=0030&nit=0050" alt="신흥케미칼">
+				
+				
+			</div>
+			<div class="txt_box">
+				<div class="title">
+						<h2 class="tit">신흥케미칼</h2>
+				</div>
+				<ul class="first">
+					<li>
+						<p class="cp_tit">소재지</p>
+						<div class="cp_txt">경기 고양시 일산동구</div>
+					</li>
+					<li>
+						<p class="cp_tit">사업영역</p>
+						<div class="cp_txt">건축물 특수 세척제</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="cp_tit">기업소개</p>
+						<div class="cp_txt">건축물 특수 세척제 
+신흥케미칼</div>
+					</li>
+					<li>
+						<p class="cp_tit">주요제품</p>
+						<div class="cp_txt">
+	
+							#바르마
+	
+							#뿌리마
+	
+							#뚜루마
+	
+							#닦으마
+	
+							#퐁퐁락스
+	
+							#청정뿌리미
+							
+						</div>
+					</li>
+				</ul>
+				<div class="cr"></div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+
+
+
+
+</div>	
+<!--  제품 및 서비스 :: E -->
+
+
+
+
+	<ul class="paging-wrap"><span class="page"><li><a href="/view.do?no=13" onclick="javascript:linkPage(1);return false;" class="first">처음페이지로 이동</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(1);return false;" class="prev">이전페이지로 이동</a></li><li><a href="#none" class="active">1</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(2);return false;">2</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(3);return false;">3</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(4);return false;">4</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(5);return false;">5</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(6);return false;">6</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(7);return false;">7</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(8);return false;">8</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(9);return false;">9</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(10);return false;">10</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(11);return false;" class="next">다음페이지로 이동</a></li><li><a href="/view.do?no=13" onclick="javascript:linkPage(339);return false;" class="last">마지막페이지로 이동</a></li></span></ul>
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+<script>
+
+function maxLengthCheck(object){
+	if (object.value.length > object.maxLength){
+		object.value = object.value.slice(0, object.maxLength);
+	}    
+}
+
+//페이징 이동
+function linkPage(no){
+	var frm = document.move_form;
+	frm.pgMode.value="list";
+	frm.pageIndex.value = no;
+	frm.submit();
+}
+
+//상세 페이지 이동
+function view_page(idx){
+	var frm = document.move_form;
+	frm.idx.value = idx;
+	frm.pgMode.value = "view";
+	frm.submit();
+}
+
+//상세 팝업 페이지 이동
+function move_show(idx, smlCateCd){
+	
+	var pop_title = "cpPop"+idx;
+	var open = window.open('',pop_title);
+	
+	var frm = document.pop_form;
+	frm.target = pop_title;
+	frm.idx.value = idx;
+	frm.no.value = "13";
+	
+	frm.pgMode.value = "view";
+	frm.smlCateCd.value = smlCateCd;
+	
+	frm.submit();
+	
+}
+
+//SEO 상세 팝업 페이지 이동
+function seo_move_show(idx){
+	var link = '/company/'+idx;
+	window.open(link);
+}
+
+//수정 페이지 이동
+function modi_page(idx){
+	var frm = document.move_form;
+	frm.idx.value = idx;
+	frm.pgMode.value = "modi";
+	frm.submit();
+}
+
+//등록 페이지 이동
+function add_page(){
+	var frm = document.move_form;
+
+	
+
+	if(confirm("로그인이 필요한 서비스입니다. \n로그인 하시겠습니까?")){
+		frm.pgMode.value = "add";
+		location.href="/view.do?no=login&rtnPage=/view.do?" + createGetParameterData("move_form");
+	}
+
+	
+	
+	
+	
+
+	
+}
+
+function list_page(){
+	var frm = document.move_form;
+	frm.pgMode.value = "list";
+	frm.idx.value = "";
+	frm.submit();
+}
+
+//검색
+function searchAction(){
+	var frm = document.search_form;
+	/* if(frm.sw.value == ""){
+		alert("검색어를 입력하여 주세요.");
+	}else{
+		frm.action = "/view.do";
+		frm.submit();
+	} 	 */
+	
+	
+	var pageUnit = "10";
+	if(frm.pageUnit.value != pageUnit){
+		frm.randomNum.value = "597";
+	}
+	
+	
+	frm.action = "/view.do";
+	frm.submit();
+}
+
+//첨부파일 다운로드 메소드
+function downFile(pgmFileId, pgmFileSeq){
+	var form = document.file_form;
+	
+	form.pgmFileSeq.value = pgmFileSeq;				//프로그램 파일 순번
+	form.pgmFileId.value = pgmFileId;				//프로그램 파일 ID
+	form.rtnPage.value = "/view.do?" + createGetParameterData("move_form");
+	form.action 	= "/cmm/file/downFile.do";
+	form.submit();
+}
+
+function delData(){
+	if(confirm("삭제하시면 복구하실수 없습니다.\n삭제하시겠습니까?")){
+		var form = document.del_form;
+		document.move_form.pgMode.value = "list";
+		form.rtnPage.value = "/view.do?" + createParameterData("move_form");
+		form.action 	= "/chemportal/cmarket/destory.do";
+		form.submit();
+	}
+}
+
+
+
+$("#portalSubMenuUl").append('<li class="active"><a href="/view.do?no=13"><span>전체</span></a></li>');
+
+	
+	$("#portalSubMenuUl").append('<li ><a href="/view.do?no=13&lrgCateCd=0100000"><span>석유 화학</span></a></li>');
+
+	
+	$("#portalSubMenuUl").append('<li ><a href="/view.do?no=13&lrgCateCd=0200000"><span>정밀 화학</span></a></li>');
+
+	
+	$("#portalSubMenuUl").append('<li ><a href="/view.do?no=13&lrgCateCd=0300000"><span>접착 & 코팅</span></a></li>');
+
+	
+	$("#portalSubMenuUl").append('<li ><a href="/view.do?no=13&lrgCateCd=0400000"><span>산업용 필름</span></a></li>');
+
+	
+	$("#portalSubMenuUl").append('<li ><a href="/view.do?no=13&lrgCateCd=0500000"><span>생활 화학</span></a></li>');
+
+	
+	$("#portalSubMenuUl").append('<li ><a href="/view.do?no=13&lrgCateCd=0600000"><span>화학 산업</span></a></li>');
+
+	
+	$("#portalSubMenuUl").append('<li ><a href="/view.do?no=13&lrgCateCd=0700000"><span>화학 장치</span></a></li>');
+
+	
+	$("#portalSubMenuUl").append('<li ><a href="/view.do?no=13&lrgCateCd=0800000"><span>기타 산업</span></a></li>');
+
+
+
+
+$(document).ready(function() {
+	var text = document.getElementById("sub_menu-box");	
+	if(text!=null) text.style.display="none";
+	
+	$("#sw").keydown(function(key){
+		if(key.keyCode == 13){
+			
+			searchAction();
+			return false;
+		}
+	});
+
+	var a = 0;
+	var sub_menu_active_li = 0;
+	$('#portalSubMenuUl>li').each(function(){
+		if($(this).hasClass('active')){
+			sub_menu_active_li = a;
+		}
+		a++;
+	});
+
+	//depth2-slide
+	var $submenuframe = $('.sub-menu');
+	$submenuframe.sly({
+		horizontal: 1,
+		itemNav: 'basic',
+		smart: 1,
+		activateOn: 'click',
+		mouseDragging: 1,
+		touchDragging: 1,
+		releaseSwing: 1,
+		startAt: sub_menu_active_li,
+		scrollBy: 1,
+		activatePageOn: 'click',
+		speed: 600,
+		elasticBounds: 1,
+		easing: 'easeOutExpo',
+		dragHandle: 1,
+		dynamicHandle: 1,
+		clickBar: 2
+	});
+		
+/* 	 */
+});
+
+</script>
+
+<form name="move_form" id="move_form" method="get">
+	<input type="hidden" name="no" value="13"/>
+	<input type="hidden" name="pageIndex" value="1"/>
+	<input type="hidden" name="sw" value=""/>
+	<input type="hidden" name="pgMode" value="list"/>
+	<input type="hidden" name="pageUnit" value="10"/>
+	<input type="hidden" name="idx" value=""/>
+	<input type="hidden" name="randomNum" value="597"/>	
+	<input type="hidden" name="idx" value=""/>
+	<input type="hidden" name="srchLctnSido" value=""/>
+	<input type="hidden" name="srchLctnSigungu" value=""/>
+
+	<input type="hidden" name="lrgCateCd" value=""/>
+	<input type="hidden" name="mdmCateCd" value=""/>
+	<input type="hidden" name="smlCateCd" value=""/>
+</form>
+
+<form name="pop_form" id="pop_form" method="get">
+	<input type="hidden" name="no" value="13"/>
+	
+	
+	<input type="hidden" name="pgMode" value="list"/>
+	
+	
+	<input type="hidden" name="idx" value=""/>
+	
+	
+
+	
+	<input type="hidden" name="smlCateCd" value=""/>
+</form>
+
+<!-- 첨부파일 폼 -->
+<form name="file_form" method="post" action="">
+	<input type="hidden" name="pgmFileId" value="" />
+	<input type="hidden" name="pgmFileSeq" value="" />
+	<input type="hidden" name="rtnPage"  value=""  />
+</form>
+
+<form name="del_form" method="post" action="">
+	<input type="hidden" name="pdtSeq" value=""/>
+	<input type="hidden" name="siteId" value=""/>
+	<input type="hidden" name="rtnPage" value=""/>
+</form>
+
+<div id="srcSigugunList_form">
+</div>
+
+<script>
+$(function(){
+	var sidoBox = new searchLctnFunction("srchLctnSido","srchLctnSigungu","srcSigugunList_form","", "");
+	sidoBox.run();
+});
+</script>
+
+<!-- side banner -->
+
+<div class="sideBanner-left">
+		<div class="img_wrap" id="portalBodyLeftBanner">				
+			
+					
+				
+					
+					
+						<div>
+							<p class="imgbox">
+								<img src="/cmm/file/showSumNailImg.do?fidx=FILE00000059950&fseq=0&nit=0020&ssnf=false" alt="공공DATA" usemap="#BodyLeftBanner0">
+								<map name="BodyLeftBanner0">
+									<map name="main_left_20210108">
+<area shape="rect" coords="0, 28, 120, 146" onclick="javascript:window.open('../chemportal/pblcdata/pblcLstPop.do?pblcApiIdx=pblc9', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1000,height=600'); return false;" href="#n">
+<area shape="rect" coords="0, 146, 120, 263" onclick="javascript:window.open('../chemportal/pblcdata/pblcLstPop.do?pblcApiIdx=pblc10', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1000,height=600'); return false;" href="#n">
+<area shape="rect" coords="0, 263, 120, 380" onclick="javascript:window.open('../chemportal/pblcdata/pblcLstPop.do?pblcApiIdx=pblc4', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1000,height=600'); return false;" href="#n">
+</map>
+								</map>
+							</p>
+						</div>
+					</a>
+					
+					
+				
+				
+			
+			<!-- <img src="/img/main/rightBanner_sample.jpg" alt=""> -->
+		</div>
+	</div>
+
+
+	<div class="sideBanner-right">
+		<div class="img_wrap" id="portalBodyRightBanner">				
+			
+			<!-- <img src="/img/main/rightBanner_sample.jpg" alt=""> -->
+		</div>
+	</div>		
+
+<script>
+function mainPortalBodyRightBannerSlideProcess(){
+	
+}
+function mainPortalBodyLeftBannerSlideProcess(){
+	
+		$('#portalBodyLeftBanner').slick({								
+			autoplay: true,
+			dots: false,
+			fade: true,
+			arrows:true,
+			
+			responsive: [
+	            {
+	              breakpoint: 480,
+	              settings: {
+	              	arrows:false
+	              }
+	            }
+
+	          ]
+		});
+		slideNoCursor();
+	
+}
+$(function(){
+	mainPortalBodyRightBannerSlideProcess();
+	mainPortalBodyLeftBannerSlideProcess();
+})
+</script>
+
+<script>
+$(function(){
+	leftBannerSetPosition_sub();
+	RightBannerSetPosition_sub();
+})
+</script>
+				
+			 	
+			 	
+			 	
+			 
+				
+				 
+		</div><!-- contents-wrap :: E -->
+	</div><!-- inwrap :: E -->
+
+
+</div>
+<!-- page:e --><!-- page:e -->
+
+
+
+
+<!-- footer:S -->
+<footer>
+	<div class="foot-top-box">
+		<div id="inwrap">
+			<ul class="foot-link">
+				<li><a href="/view.do?no=120"><span>켐녹 소개</span></a></li>
+				<li><a href="/view.do?no=115"><span>켐녹소식</span></a></li>
+				<li><a href="/view.do?no=117"><span>이용약관</span></a></li>
+				<li class="width2"><a href="/view.do?no=118"><span>개인정보처리방침</span></a></li>
+				<li class="width2"><a href="/view.do?no=91"><span>서비스 이용 가이드</span></a></li>
+				<li class="width1"><a href="/view.do?no=90"><span>자주하는 질문</span></a></li>
+				<li><a href="/view.do?no=116"><span>고객센터</span></a></li>
+				<li class="width1"><a href="/view.do?no=121"><span>찾아오시는 길</span></a></li>
+				<li><a href="/view.do?no=sitemap"><span>사이트맵</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="inwrap">
+		<ul class="sns-link">
+			<li><a href="https://blog.naver.com/chemknockblog" class="naver" target="_blank">네이버</a></li>
+			<li><a href="https://www.facebook.com/chemknock1" class="facebook" target="_blank">페이스북</a></li>
+			<li><a href="https://story.kakao.com/ch/chemknock" class="kakao" target="_blank">카카오톡</a></li>
+		</ul>
+		<img src="/cmm/file/showCpImgFile.do?siteImgSeq=20444&imgType=0031&nit=0050" alt="logo" class="f_logo"/>
+		<div class="foot-text-box">	
+			<div class="address-box">
+				<div class="address">
+					<p class="cpNm">주식회사 켐녹</p>
+					<p>(14558) 경기 부천시 조마루로385번길 801207호 (원미동, 춘의테크노파크3차)</p>				
+					<p>대표자 이태영ㆍ사업자등록번호 764-88-01305</p>
+				</div>
+				<p class="copyright">COPYRIGHT 2020. ChemKnock inc. All RIGHTS RESERVED.</p>
+			</div>
+			<div class="cr"></div>
+		</div>
+		<div class="cs">
+			<p class="tit">고객센터</p>
+			<p>Tel. <span class="point">032-668-9515</span> (평일 09:00 ~ 18:00)<br>
+			   Fax. 032-668-9516<br>
+			   Mail. info@chemknock.com
+			</p>
+		</div>
+		<div class="cr"></div>
+	</div>
+		<!-- foot-left-box :: E -->
+		<a class="m_topbtn" href="#n"><span>TOP</span></a>
+</footer><!-- footer:E -->
+</div>
+</body>
+</html>
