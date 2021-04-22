@@ -1,12 +1,11 @@
 <?php
 
-use MesseEsang\Crawler\Domain\MiddleCategory;
 use Symfony\Component\DomCrawler\Crawler;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-// $html = file_get_contents('https://chemknock.co.kr/view.do?no=13');
-$html = file_get_contents(__DIR__ . '/test.html');
+$html = file_get_contents('https://chemknock.co.kr/view.do?no=13');
+// $html = file_get_contents(__DIR__ . '/test.html');
 $crawler = new Crawler($html);
 
 $results = $crawler->filter('div.category-tab-ul > div.li > a');
